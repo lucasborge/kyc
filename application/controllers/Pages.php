@@ -24,6 +24,8 @@ class Pages extends CI_Controller {
 		$this->load->database();
 
 		$this->load->model("page_model");
+		$this->load->helper("url");
+		$this->load->library("pagination");
 	 }
 
 	public function index()
@@ -38,26 +40,61 @@ class Pages extends CI_Controller {
 
 	public function searchlist()
 	{
-		$nrn = $this->input->post('nrn');
-		$lname = $this->input->post('last_name');
-		$fname = $this->input->post('first_name');
+		if ($this->uri->segment(3))
+		{
+			list($nrn, $lname, $fname) = preg_split("/_/", $this->uri->segment(3));
+		} else {
+			$nrn = $this->input->post('nrn');
+			$lname = $this->input->post('last_name');
+			$fname = $this->input->post('first_name');
+		}
 
 		$where = array ();
 		if  ($nrn)
 			$where['NRN'] = $nrn;
 		if  ($lname)
-			$where['STR_FN1'] = $lname;
+			$where['STR_FN2'] = $lname;
 		if  ($fname)
-			$where['STR_FN2'] = $fname;
+			$where['STR_FN1'] = $fname;
 
-		$clients = $this->page_model->get_client_data ($where);
+		$config = array();
 
-		$data['clients'] = $clients;
-		
-		if (count ($clients) > 1) {
+		$config['base_url'] = base_url() . "pages/searchlist/{$nrn}_{$lname}_{$fname}" ;
+		$total_rows = $this->page_model->get_client_count ($where);
+		$config['total_rows'] = $total_rows;
+		$config['per_page'] = 30;
+		$config['uri_segment'] = 4;
+		$config['num_links'] = 2;//round ($total_rows / $config['per_page']);
+		$config['display_pages'] = true;
+		$config['first_link'] = "first";
+		$config['last_link'] = "last";
+		$config['first_tag_open'] = "<span>";
+		$config['first_tag_close'] = "</span>";
+		$config['last_tag_open'] = "<span>";
+		$config['last_tag_close'] = "</span>";
+		$config['num_tag_open'] = "<span>";
+		$config['num_tag_close'] = "</span>";
+		$config['next_tag_open'] = "<span>";
+		$config['next_tag_close'] = "</span>";
+		$config['prev_tag_open'] = "<span>";
+		$config['prev_tag_close'] = "</span>";
+		$config['cur_tag_open'] = "<span class='current-page'>";
+		$config['cur_tag_close'] = "</span>";
+
+		$this->pagination->initialize($config);
+
+		$start = ($this->uri->segment(4)) ? $this->uri->segment(4) : 0;
+
+		$data['clients'] = $this->page_model->get_client_data ($where, $start, $config['per_page']);
+		$data['links'] = $this->pagination->create_links();
+		$data['start'] = $start;
+
+		if (count ($data['clients']) > 1) {
 			$this->load->view('searchlist', $data);
-		} else {
+		} else if (count ($data['clients']) == 1) {
 			$this->load->view('approve', $data);
+		} else {
+			$this->load->view('nodata');
 		}
 		
 	}

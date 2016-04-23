@@ -534,23 +534,26 @@ option {
 	padding: 26px 14px;
 }
 
-.approve-page .approve-container .approve-form .approve-next-btn {
+.approve-page .approve-container .approve-next-btn {
 	text-align: right;
 	color: #FFF;
+    display: inline;
 }
 
-.approve-page .approve-container .approve-form .approve-prev-btn {
+.approve-page .approve-container .approve-prev-btn {
 	text-align: left;
 	color: #FFF;
+    display: inline;
 }
 
-.approve-page .approve-container .approve-form .approve-next-btn a, .approve-page .approve-container .approve-form .approve-prev-btn a {
+.approve-page .approve-container .approve-next-btn span, .approve-page .approve-container .approve-prev-btn span {
 	color: #FFF;
 	font-size: 24px;
+    cursor: pointer;
 }
 
 .search-page {
-
+    
 }
 
 .search-page .search-container {
@@ -615,6 +618,10 @@ option {
 	    text-align: center;
 	    width: 280px;
 	}
+}
+
+.search-page .search-container .search-list {
+
 }
 
 .search-page .search-container .search-form {
@@ -712,10 +719,6 @@ option {
     background-color: #FFF;
 }
 
-.search-page .search-container .search-list {
-
-}
-
 .search-page .search-container .search-list table {
     width: 100%;
 }
@@ -737,4 +740,28 @@ option {
 .search-page .search-container .search-list table tr:hover {
     background-color: #3ea9f5;
     color: #2f5eba;
+}
+
+.page-navigation {
+    color: #FFF;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    text-align: right;
+}
+
+.page-navigation span {
+    border: 2px solid #FFF;
+    border-radius: 3px;
+    padding: 2px 5px;
+    margin-left: 5px;
+}
+
+.page-navigation .current-page {
+    border: 2px solid #2f5eba;
+    color: #2f5eba;
+}
+
+.page-navigation span a {
+    cursor: pointer;
+    text-decoration: none;
 }

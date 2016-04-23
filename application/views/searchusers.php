@@ -61,6 +61,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                         <div class="col-md-12">
                             <span>By clicking this button, you agree to our <a>Terms of Service.</a></span>
                         </div>
+                        <input type="hidden" id="start" name="start" value="0" />
+                        <input type="hidden" id="current" name="current" value="1" />
                     </form>
                 </div>
             </div>

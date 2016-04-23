@@ -1,7 +1,6 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-$no = 1;
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
@@ -26,6 +25,11 @@ $no = 1;
                     <h2>Search for an Individual</h2>
                     <h4></h4>
                 </div>
+                <div class="col-md-12">
+                    <div class="page-navigation">
+                        <?=$links?>
+                    </div>
+                </div>
                 <div class="col-md-12 search-list">
                     <div class="table-responsive">
                         <table class="table-bordered">
@@ -33,8 +37,8 @@ $no = 1;
                             <?php
                             foreach ($clients as $client) {
                             ?>
-                            <tr>
-                                <td><?=$no++?></td>
+                            <tr class="view-details" for="<?=$client->NRN?>">
+                                <td><?=++$start?></td>
                                 <td><?=$client->NRN?></td>
                                 <td><?=$client->STR_FN1?></td>
                                 <td><?=$client->STR_FN2?></td>
@@ -43,6 +47,11 @@ $no = 1;
                             }
                             ?>
                         </table>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="page-navigation">
+                        <?=$links?>
                     </div>
                 </div>
             </div>

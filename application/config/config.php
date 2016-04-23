@@ -143,7 +143,7 @@ $config['composer_autoload'] = FALSE;
 | Allowed URL Characters
 |--------------------------------------------------------------------------
 |
-| This lets you specify which characters are permitted within your URLs.
+| This lets you specify which characters are mitted within your URLs.
 | When someone tries to submit a URL with disallowed characters they will
 | get a warning message.
 |
@@ -511,3 +511,7 @@ $config['rewrite_short_tags'] = FALSE;
 | Array:		array('10.0.1.200', '192.168.5.0/24')
 */
 $config['proxy_ips'] = '';
+
+//
+$config["per_page"] = 30;
+$config["uri_segment"] = 2;

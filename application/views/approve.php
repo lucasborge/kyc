@@ -15,6 +15,7 @@ $client = $clients[0];
 	<script type="text/javascript" src="/asset/js/bootstrap.min.js"></script>
 
 	<link rel="stylesheet" href="/asset/css/style.css" />
+    <script type="text/javascript" src="/asset/js/search.js"></script>
 </head>
 
     <body>
@@ -66,7 +67,7 @@ $client = $clients[0];
                         </div>
                         <div class="col-md-12 space-10"></div>
                         <div class="col-md-4 form-group">
-                            <input type="text" class="form-control" id="per_addr" placeholder="Permanent Address" />
+                            <input type="text" class="form-control" id="per_addr" placeholder="Permanent Address" value="<?=$client->STR_FN1?>" />
                         </div>
                         <div class="col-md-4 form-group">
                             <input type="text" class="form-control" id="per_addr" placeholder="Permanent Address" />
@@ -78,7 +79,7 @@ $client = $clients[0];
                             <input type="text" class="form-control" id="post_code" placeholder="Post code" />
                         </div>
                         <div class="col-md-4 form-group">
-                            <input type="text" class="form-control" id="country" placeholder="Country" />
+                            <input type="text" class="form-control" id="country" placeholder="Country" value="Babados" />
                         </div>
                         <div class="col-md-4 form-group">
                             <input type="text" class="form-control" id="postal_addr" placeholder="Postal Address" />
@@ -93,22 +94,18 @@ $client = $clients[0];
                         <div class="col-md-4 form-group">
                             <input type="text" class="form-control" id="employer" placeholder="Employer" />
                         </div>
-                        <div class="col-md-12 space-30"></div>
-                        <div class="col-md-12 form-group approve-next-btn">
-                            <a href="/user/approve2"><span class="glyphicon glyphicon-arrow-right"></span></a>
-                        </div>
                     </form>
                 </div>
                 <div class="col-md-12 approve-form approve-second">
                     <form role="form">
                         <div class="col-md-4 form-group">
-                            <img src="http://192.168.1.73/img/coffee.jpg"/>
+                            <img src="/img/coffee.jpg"/>
                         </div>
                         <div class="col-md-4 form-group">
-                            <img src="http://192.168.1.73/img/baseball.png"/>
+                            <img src="/img/baseball.png"/>
                         </div>
                         <div class="col-md-4 form-group">
-                            <img src="http://192.168.1.73/img/cat-eye.jpg"/>
+                            <img src="/img/cat-eye.jpg"/>
                         </div>
                         <div class="col-md-4 form-group">
                             <input type="text" class="form-control" id="email" placeholder="Valid" />
@@ -130,13 +127,6 @@ $client = $clients[0];
                         </div>
                         <div class="col-md-4 form-group">
                             <br><img src="/img/cat-eye.jpg"/>
-                        </div>
-                        <div class="col-md-12 space-30"></div>
-                        <div class="col-md-6 form-group approve-prev-btn">
-                            <a href="/user/approve"><span class="glyphicon glyphicon-arrow-left"></span></a>
-                        </div>
-                        <div class="col-md-6 form-group approve-next-btn">
-                            <a href="/user/approve3"><span class="glyphicon glyphicon-arrow-right"></span></a>
                         </div>
                     </form>
                 </div>
@@ -162,11 +152,15 @@ $client = $clients[0];
                         <div class="col-md-8 form-group">
                             <input type="text" class="form-control" id="country" placeholder="Motalities Database" />
                         </div>
-                        <div class="col-md-8 space-30"></div>
-                        <div class="col-md-8 form-group approve-prev-btn">
-                            <a href="/user/approve2"><span class="glyphicon glyphicon-arrow-left"></span></a>
-                        </div>
                     </form>
+                </div>
+                <div class="col-md-12">
+                    <div class="col-md-6 approve-prev-btn invisible">
+                        <span class="glyphicon glyphicon-arrow-left"></span>
+                    </div>
+                    <div class="col-md-6 approve-next-btn">
+                        <span class="glyphicon glyphicon-arrow-right"></span>
+                    </div>
                 </div>
             </div>
         </div>

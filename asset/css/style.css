@@ -1,0 +1,740 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    font-size: 16px;
+    font-family: "Whitney A", "Whitney B", "Avenir", Helvetica, sans-serif;
+    color: #363945;
+    -webkit-font-smoothing: antialiased;
+    background: url(/asset/img/background.png);
+    background-color: #3ea9f5;
+    background-repeat: repeat;
+    background-size: 947px 530px;
+}
+
+h1 {
+    font-size: 25px;
+    color: #676767;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    text-align: center;
+}
+
+h2 {
+    color: white;
+    font-family: "Whitney A", "Whitney B", "Avenir", Helvetica, sans-serif;
+    font-size: 38px;
+    font-weight: 600;
+    letter-spacing: 0px;
+}
+
+h4 {
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 11px;
+    margin-bottom: 16px;
+    opacity: 0.65;
+    line-height: 27px;
+    width: 88%;
+    margin: 11px auto 13px auto;
+}
+
+a {
+	color: #FFF;
+	text-decoration: underline;
+}
+
+span {
+	color: #FFF;
+}
+
+@media (max-width: 600px) {
+	h2 {
+	    font-size: 24px;
+	}
+	h4 {
+	    font-size: 16px;
+	    line-height: 18px;
+	}
+}
+
+.space-10 {margin-top: 10px; float: left;}
+.space-20 {margin-top: 20px; float: left;}
+.space-30 {margin-top: 30px; float: left;}
+.space-40 {margin-top: 40px; float: left;}
+.space-50 {margin-top: 50px; float: left;}
+
+.signup-page {
+	background: url(/asset/background.png);
+    background-color: #3ea9f5;
+    background-repeat: repeat;
+    background-size: 947px 530px;
+    font-family: "Whitney A", "Whitney B", "Avenir", Helvetica, sans-serif;
+    background-position: 50% -1%;
+}
+
+.signup_info {
+	margin-top: 50px;
+}
+
+@media (max-width: 600px) {
+	.signup_info {
+		margin-top: 10px;
+	}
+}
+
+.site-logo {
+    text-align: left;
+    width: 93.5%;
+    margin-top: 6px;
+    display: inline-block;
+    vertical-align: top;
+    zoom: 1;
+}
+
+.login-button {
+	display: inline-block;
+    vertical-align: top;
+    zoom: 1;
+    width: 3%;
+    margin-top: 0px;
+    position: relative;
+}
+
+.login-button a {
+    padding: 10px 15px;
+    color: white;
+    background: #3ea9f5;
+    border: 1px solid rgba(255,255,255,0.77);
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    border-radius: 4px;
+    font-size: 18px;
+    font-weight: 600;
+    margin-right: 0px;
+    line-height: 22px;
+    -webkit-font-smoothing: antialiased;
+    text-decoration: none;
+    margin-top: 0px;
+    position: absolute;
+    right: 0px;
+}
+
+.signup-title {
+	border: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.signup-container {
+	padding: 10px 20px 30px;
+    margin: 0 auto;
+    background-color: #3ea9f5;
+    margin-top: 80px;
+    text-align: center;
+    width: 800px;
+}
+
+@media (max-width: 1280px) {
+	.signup-container {
+		padding: 10px 20px 30px;
+	    margin-top: 50px;
+	    width: 700px;
+	}
+}
+
+@media (max-width: 768px) {
+	.signup-container {
+		padding: 10px 20px 20px;
+	    margin-top: 40px;
+	}
+}
+
+@media (max-width: 600px) {
+	.signup-container {
+		padding: 10px 0px 20px;
+	    margin-top: 20px;
+	    width: 340px;
+	}
+}
+
+@media (max-width: 321px) {
+	.signup-container {
+		padding: 10px 0px 20px;
+	    margin-top: 20px;
+	    width: 300px;
+	}
+}
+
+.signup-container h2 {
+    color: white;
+    font-family: "Whitney A", "Whitney B", "Avenir", Helvetica, sans-serif;
+    font-size: 38px;
+    font-weight: 600;
+    letter-spacing: 0px;
+}
+
+.signup-container h4 {
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 11px;
+    margin-bottom: 16px;
+    opacity: 0.65;
+    line-height: 27px;
+    width: 88%;
+    margin: 11px auto 13px auto;
+}
+
+@media (max-width: 600px) {
+	.signup-container h2 {
+	    font-size: 24px;
+	}
+	.signup-container h4 {
+	    font-size: 16px;
+	    line-height: 18px;
+	}
+}
+
+@media (max-width: 321px) {
+	.signup-container h2 {
+	    font-size: 20px;
+	}
+	.signup-container h4 {
+	    font-size: 12px;
+	    line-height: 15px;
+	}
+}
+
+.signup-container .signup-form {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+    margin-top: 20px;
+}
+
+.signup-container .signup-form input {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    font-family: "Whitney A", "Whitney B", "Avenir", Helvetica, sans-serif;
+    font-size: 16px;
+    height: auto;
+    padding: 21px 23px;
+    display: inline-block;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+}
+
+.signup-container .signup-form input[type="checkbox"] {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    color: #FFF;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    font-family: "Whitney A", "Whitney B", "Avenir", Helvetica, sans-serif;
+    font-size: 16px;
+    height: auto;
+    padding: 21px 23px;
+    display: inline-block;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+}
+
+.signup-container .signup-form input[type="button"] {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: auto;
+    color: white;
+    font-family: "Whitney A", "Whitney B", "Avenir", Helvetica, sans-serif;
+    font-size: 17px;
+    left: 0;
+    padding: 21px;
+    position: relative;
+    font-weight: 600;
+    width: 100%;
+    text-transform: none;
+    letter-spacing: 0px;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border: 0px;
+    background-color: #2f5eba;
+}
+
+.signup-container .signup-form input[type="button"]:hover {
+	background-color: #2f5eba;
+    -moz-transition: all 0.05s ease-in;
+    -o-transition: all 0.05s ease-in;
+    -webkit-transition: all 0.05s ease-in;
+    -ms-transition: all 0.05s ease-in;
+    transition: all 0.05s ease-in;
+    -webkit-transform: translate3d(0, 0, 0);
+}
+
+.signup-container .signup-form label {
+	color: #FFF;
+	font-weight: normal;
+}
+
+.signup-container .signup-form select {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    cursor: pointer;
+    width: 100%;
+    background: white;
+    padding: 21px 23px;
+    display: inline-block;
+    font-family: "Whitney A", "Whitney B", "Avenir", Helvetica, sans-serif;
+    font-size: 16px;
+    height: 67px;
+    color: #888;
+}
+
+option {
+    font-weight: normal;
+    display: block;
+    white-space: pre;
+    min-height: 1.2em;
+    padding: 0px 2px 1px;
+}
+
+.login_body {
+	background: #F7DA55;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.login-container {
+    margin: 0 auto;
+    margin-top: 50px;
+    text-align: center;
+    width: 400px;
+}
+
+@media (max-width: 420px) {
+	.login-container {
+	    margin: 0 auto;
+	    margin-top: 80px;
+	    text-align: center;
+	    width: 300px;
+	}
+}
+
+.login-container .login-form {
+    padding: 35px 35px 20px;
+    margin-bottom: 20px;
+    background: #f7f6f4;
+}
+
+.login-container .login-form {
+    background: #eee;
+    margin: 9% auto 4% auto;
+    position: relative;
+    -webkit-border-radius: 0.4em;
+    -o-border-radius: 0.4em;
+    -moz-border-radius: 0.4em;
+    box-shadow: rgba(243, 208, 39, 0.33) 1px 1px, rgba(243, 208, 39, 0.33) 2px 2px, rgba(243, 208, 39, 0.33) 3px 3px, rgba(243, 208, 39, 0.33) 4px 4px, rgba(243, 208, 39, 0.33) 5px 5px, rgba(243, 208, 39, 0.33) 6px 6px, rgba(243, 208, 39, 0.33) 7px 7px, rgba(243, 208, 39, 0.33) 8px 8px, rgba(243, 208, 39, 0.33) 9px 9px, rgba(243, 208, 39, 0.33) 10px 10px, rgba(243, 208, 39, 0.33) 11px 11px, rgba(243, 208, 39, 0.33) 12px 12px, rgba(243, 208, 39, 0.33) 13px 13px, rgba(243, 208, 39, 0.33) 14px 14px, rgba(243, 208, 39, 0.33) 15px 15px, rgba(243, 208, 39, 0.33) 16px 16px, rgba(243, 208, 39, 0.33) 17px 17px, rgba(243, 208, 39, 0.33) 18px 18px, rgba(243, 208, 39, 0.33) 19px 19px, rgba(243, 208, 39, 0.33) 20px 20px, rgba(243, 208, 39, 0.33) 21px 21px, rgba(243, 208, 39, 0.33) 22px 22px, rgba(243, 208, 39, 0.33) 23px 23px, rgba(243, 208, 39, 0.33) 24px 24px, rgba(243, 208, 39, 0.33) 25px 25px, rgba(243, 208, 39, 0.33) 26px 26px, rgba(243, 208, 39, 0.33) 27px 27px, rgba(243, 208, 39, 0.33) 28px 28px, rgba(243, 208, 39, 0.33) 29px 29px, rgba(243, 208, 39, 0.33) 30px 30px, rgba(243, 208, 39, 0.33) 31px 31px, rgba(243, 208, 39, 0.33) 32px 32px, rgba(243, 208, 39, 0.33) 33px 33px, rgba(243, 208, 39, 0.33) 34px 34px, rgba(243, 208, 39, 0.33) 35px 35px, rgba(243, 208, 39, 0.33) 36px 36px, rgba(243, 208, 39, 0.33) 37px 37px, rgba(243, 208, 39, 0.33) 38px 38px, rgba(243, 208, 39, 0.33) 39px 39px, rgba(243, 208, 39, 0.33) 40px 40px, rgba(243, 208, 39, 0.33) 41px 41px, rgba(243, 208, 39, 0.33) 42px 42px, rgba(243, 208, 39, 0.33) 43px 43px, rgba(243, 208, 39, 0.33) 44px 44px, rgba(243, 208, 39, 0.33) 45px 45px, rgba(243, 208, 39, 0.33) 46px 46px, rgba(243, 208, 39, 0.33) 47px 47px, rgba(243, 208, 39, 0.33) 48px 48px, rgba(243, 208, 39, 0.33) 49px 49px, rgba(243, 208, 39, 0.33) 50px 50px, rgba(243, 208, 39, 0.33) 51px 51px, rgba(243, 208, 39, 0.33) 52px 52px, rgba(243, 208, 39, 0.33) 53px 53px, rgba(243, 208, 39, 0.33) 54px 54px, rgba(243, 208, 39, 0.33) 55px 55px, rgba(243, 208, 39, 0.33) 56px 56px, rgba(243, 208, 39, 0.33) 57px 57px, rgba(243, 208, 39, 0.33) 58px 58px, rgba(243, 208, 39, 0.33) 59px 59px, rgba(243, 208, 39, 0.33) 60px 60px, rgba(243, 208, 39, 0.33) 61px 61px, rgba(243, 208, 39, 0.33) 62px 62px, rgba(243, 208, 39, 0.33) 63px 63px, rgba(243, 208, 39, 0.33) 64px 64px, rgba(243, 208, 39, 0.33) 65px 65px, rgba(243, 208, 39, 0.33) 66px 66px, rgba(243, 208, 39, 0.33) 67px 67px, rgba(243, 208, 39, 0.33) 68px 68px, rgba(243, 208, 39, 0.33) 69px 69px, rgba(243, 208, 39, 0.33) 70px 70px, rgba(243, 208, 39, 0.33) 71px 71px, rgba(243, 208, 39, 0.33) 72px 72px, rgba(243, 208, 39, 0.33) 73px 73px, rgba(243, 208, 39, 0.33) 74px 74px, rgba(243, 208, 39, 0.33) 75px 75px, rgba(243, 208, 39, 0.33) 76px 76px, rgba(243, 208, 39, 0.33) 77px 77px, rgba(243, 208, 39, 0.33) 78px 78px, rgba(243, 208, 39, 0.33) 79px 79px, rgba(243, 208, 39, 0.33) 80px 80px, rgba(243, 208, 39, 0.33) 81px 81px, rgba(243, 208, 39, 0.33) 82px 82px, rgba(243, 208, 39, 0.33) 83px 83px, rgba(243, 208, 39, 0.33) 84px 84px, rgba(243, 208, 39, 0.33) 85px 85px, rgba(243, 208, 39, 0.33) 86px 86px, rgba(243, 208, 39, 0.33) 87px 87px, rgba(243, 208, 39, 0.33) 88px 88px, rgba(243, 208, 39, 0.33) 89px 89px, rgba(243, 208, 39, 0.33)90px 90px, rgba(243, 208, 39, 0.33)91px 91px, rgba(243, 208, 39, 0.33)92px 92px, rgba(243, 208, 39, 0.33)93px 93px, rgba(243, 208, 39, 0.33)94px 94px, rgba(243, 208, 39, 0.33) 95px 95px, rgba(243, 208, 39, 0.33) 96px 96px, rgba(243, 208, 39, 0.33) 97px 97px, rgba(243, 208, 39, 0.33) 98px 98px, rgba(243, 208, 39, 0.33) 99px 99px, rgba(243, 208, 39, 0.33) 100px 100px, rgba(243, 208, 39, 0.33) 101px 101px, rgba(243, 208, 39, 0.33) 102px 102px, rgba(243, 208, 39, 0.33) 103px 103px, rgba(243, 208, 39, 0.33) 104px 104px, rgba(243, 208, 39, 0.33) 105px 105px, rgba(243, 208, 39, 0.33) 106px 106px, rgba(243, 208, 39, 0.33) 107px 107px, rgba(243, 208, 39, 0.33) 108px 108px, rgba(243, 208, 39, 0.33) 109px 109px, rgba(243, 208, 39, 0.33) 110px 110px, rgba(243, 208, 39, 0.33) 111px 111px, rgba(243, 208, 39, 0.33) 112px 112px, rgba(243, 208, 39, 0.33) 113px 113px, rgba(243, 208, 39, 0.33) 114px 114px, rgba(243, 208, 39, 0.33) 115px 115px, rgba(243, 208, 39, 0.33) 116px 116px, rgba(243, 208, 39, 0.33) 117px 117px, rgba(243, 208, 39, 0.33) 118px 118px, rgba(243, 208, 39, 0.33) 119px 119px, rgba(243, 208, 39, 0.33) 120px 120px, rgba(243, 208, 39, 0.33) 121px 121px, rgba(243, 208, 39, 0.33) 122px 122px, rgba(243, 208, 39, 0.33) 123px 123px, rgba(243, 208, 39, 0.33) 124px 124px, rgba(243, 208, 39, 0.33) 125px 125px, rgba(243, 208, 39, 0.33) 126px 126px, rgba(243, 208, 39, 0.33) 127px 127px, rgba(243, 208, 39, 0.33) 128px 128px, rgba(243, 208, 39, 0.33) 129px 129px, rgba(243, 208, 39, 0.33) 130px 130px, rgba(243, 208, 39, 0.33) 131px 131px, rgba(243, 208, 39, 0.33) 132px 132px, rgba(243, 208, 39, 0.33)133px 133px, rgba(243, 208, 39, 0.33)134px 134px, rgba(243, 208, 39, 0.33)135px 135px, rgba(243, 208, 39, 0.33) 136px 136px, rgba(243, 208, 39, 0.33) 137px 137px, rgba(243, 208, 39, 0.33) 138px 138px, rgba(243, 208, 39, 0.33) 139px 139px, rgba(243, 208, 39, 0.33) 140px 140px, rgba(243, 208, 39, 0.33) 141px 141px, rgba(243, 208, 39, 0.33) 142px 142px, rgba(243, 208, 39, 0.33) 143px 143px, rgba(243, 208, 39, 0.33) 144px 144px, rgba(243, 208, 39, 0.33) 145px 145px, rgba(243, 208, 39, 0.33) 146px 146px, rgba(243, 208, 39, 0.33) 147px 147px, rgba(243, 208, 39, 0.33) 148px 148px, rgba(243, 208, 39, 0.33) 149px 149px, rgba(243, 208, 39, 0.33) 150px 150px, rgba(243, 208, 39, 0.33) 151px 151px, rgba(243, 208, 39, 0.33) 152px 152px, rgba(243, 208, 39, 0.33) 153px 153px, rgba(243, 208, 39, 0.33) 154px 154px, rgba(243, 208, 39, 0.33) 155px 155px, rgba(243, 208, 39, 0.33) 156px 156px, rgba(243, 208, 39, 0.33) 157px 157px, rgba(243, 208, 39, 0.33) 158px 158px, rgba(243, 208, 39, 0.33) 159px 159px, rgba(243, 208, 39, 0.33) 160px 160px, rgba(243, 208, 39, 0.33) 161px 161px, rgba(243, 208, 39, 0.33) 162px 162px, rgba(243, 208, 39, 0.33) 163px 163px, rgba(243, 208, 39, 0.33) 164px 164px, rgba(243, 208, 39, 0.33) 165px 165px, rgba(243, 208, 39, 0.33) 166px 166px, rgba(243, 208, 39, 0.33) 167px 167px, rgba(243, 208, 39, 0.33) 168px 168px, rgba(243, 208, 39, 0.33) 169px 169px, rgba(243, 208, 39, 0.33) 170px 170px, rgba(243, 208, 39, 0.33) 171px 171px, rgba(243, 208, 39, 0.33) 172px 172px, rgba(243, 208, 39, 0.33) 173px 173px, rgba(243, 208, 39, 0.33) 174px 174px, rgba(243, 208, 39, 0.33) 175px 175px, rgba(243, 208, 39, 0.33) 176px 176px, rgba(243, 208, 39, 0.33) 177px 177px, rgba(243, 208, 39, 0.33) 178px 178px, rgba(243, 208, 39, 0.33) 179px 179px, rgba(243, 208, 39, 0.33) 180px 180px, rgba(243, 208, 39, 0.33) 181px 181px, rgba(243, 208, 39, 0.33) 182px 182px;
+}
+
+.login-container .login-form h1 {
+	margin-top: 18%;
+	margin-bottom: 8%;
+}
+
+.login-container .login-form .head {
+    position: absolute;
+    top: -15%;
+    left: 35%;
+}
+
+.login-container .login-form .login-remember {
+	margin-top: 20px;
+	color: #999;
+	padding: 0px;
+}
+
+.login-container .login-form input[type="text"] {
+	padding: 24px 10px;
+}
+
+.login-container .login-form input[type="checkbox"] {
+
+}
+
+.login-container .login-form input[type="button"] {
+	background-color: #4ab1f5;
+    border-color: #4ab1f5;
+    color: #fff;
+    height: 50px;
+    padding: 3%;
+    margin-bottom: 8%;
+    background: #21A957;
+    font-family: 'Open Sans', sans-serif;
+    color: #ECECEC;
+    box-shadow: inset 0px 0px 10px #666464;
+    -webkit-text-shadow: 0px 0px 3px #000;
+    -moz-text-shadow: 0px 0px 3px #000;
+    -o-text-shadow: 0px 0px 3px #000;
+    -ms-text-shadow: 0px 0px 3px #000;
+    font-size: 20px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+    border-radius: 5px;
+    transition: 0.5s;
+    -webkit-appearance: none;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -o-transition: 0.5s;
+    -ms-transition: 0.5s;
+}
+
+.login-container .login-signup {
+	color: #59bcfc;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.login-container .login-footer {
+	margin: 0px;
+	padding: 0px;
+}
+
+.login-container .login-footer .login-forgot-password {
+	margin: 0px;
+	padding: 0px 2px;
+	float: left;
+	text-align: left;
+}
+
+.login-container .login-footer .login-forgot-password a {
+	color: #fff;
+}
+
+.login-container .login-footer .login-signup-new {
+	margin: 0px;
+	padding: 0px 2px;
+	text-align: right;
+	float: right;
+	font-size: 14px;
+    color: #a9a9a9;
+}
+
+@media (max-width: 420px) {
+	.login-container .login-footer .login-forgot-password {
+		text-align: center;
+		float: none;
+	}
+
+	.login-container .login-footer .login-signup-new {
+		text-align: center;
+		float: none;
+	}
+}
+
+.login-container .login-footer .login-signup-new .login-signup {
+	color: #fff;
+    text-decoration: none;
+}
+
+/*Approve page*/
+.approve-page {
+
+}
+
+.approve-page .approve-container {
+	padding: 10px 20px 10px;
+    margin: 0 auto;
+    background-color: #3ea9f5;
+    margin-top: 40px;
+    text-align: center;
+    width: 1000px;
+}
+
+@media (max-width: 1024px) {
+	.approve-page .approve-container {
+		padding: 10px 20px 10px;
+	    margin: 0 auto;
+	    background-color: #3ea9f5;
+	    margin-top: 40px;
+	    text-align: center;
+	    width: 800px;
+	}
+}
+
+@media (max-width: 768px) {
+	.approve-page .approve-container {
+		padding: 10px 20px 10px;
+	    margin: 0 auto;
+	    background-color: #3ea9f5;
+	    margin-top: 40px;
+	    text-align: center;
+	    width: 600px;
+	}
+}
+
+@media (max-width: 450px) {
+	.approve-page .approve-container {
+		padding: 10px 20px 10px;
+	    margin: 0 auto;
+	    background-color: #3ea9f5;
+	    margin-top: 40px;
+	    text-align: center;
+	    width: 360px;
+	}
+}
+
+@media (max-width: 380px) {
+	.approve-page .approve-container {
+		padding: 10px 20px 10px;
+	    margin: 0 auto;
+	    background-color: #3ea9f5;
+	    margin-top: 40px;
+	    text-align: center;
+	    width: 320px;
+	}
+}
+
+@media (max-width: 320px) {
+	.approve-page .approve-container {
+		padding: 10px 20px 10px;
+	    margin: 0 auto;
+	    background-color: #3ea9f5;
+	    margin-top: 40px;
+	    text-align: center;
+	    width: 280px;
+	}
+}
+
+.approve-page .approve-container .approve-second, .approve-third {
+    display: none;
+}
+
+.approve-page .approve-container .approve-form {
+	margin: 0px auto;
+	margin-top: 20px;
+}
+
+.approve-page .approve-container .approve-form input {
+	background: #FFF;
+	padding: 26px 14px;
+}
+
+.approve-page .approve-container .approve-form .approve-next-btn {
+	text-align: right;
+	color: #FFF;
+}
+
+.approve-page .approve-container .approve-form .approve-prev-btn {
+	text-align: left;
+	color: #FFF;
+}
+
+.approve-page .approve-container .approve-form .approve-next-btn a, .approve-page .approve-container .approve-form .approve-prev-btn a {
+	color: #FFF;
+	font-size: 24px;
+}
+
+.search-page {
+
+}
+
+.search-page .search-container {
+	padding: 10px 20px 10px;
+    margin: 0 auto;
+    background-color: #3ea9f5;
+    margin-top: 40px;
+    text-align: center;
+    width: 900px;
+}
+
+@media (max-width: 1024px) {
+	.search-page .search-container {
+		padding: 10px 20px 10px;
+	    margin: 0 auto;
+	    background-color: #3ea9f5;
+	    margin-top: 40px;
+	    text-align: center;
+	    width: 700px;
+	}
+}
+
+@media (max-width: 768px) {
+	.search-page .search-container {
+		padding: 10px 20px 10px;
+	    margin: 0 auto;
+	    background-color: #3ea9f5;
+	    margin-top: 40px;
+	    text-align: center;
+	    width: 700px;
+	}
+}
+
+@media (max-width: 450px) {
+	.search-page .search-container {
+		padding: 10px 20px 10px;
+	    margin: 0 auto;
+	    background-color: #3ea9f5;
+	    margin-top: 40px;
+	    text-align: center;
+	    width: 360px;
+	}
+}
+
+@media (max-width: 380px) {
+	.search-page .search-container {
+		padding: 10px 20px 10px;
+	    margin: 0 auto;
+	    background-color: #3ea9f5;
+	    margin-top: 40px;
+	    text-align: center;
+	    width: 320px;
+	}
+}
+
+@media (max-width: 320px) {
+	.search-page .search-container {
+		padding: 10px 20px 10px;
+	    margin: 0 auto;
+	    background-color: #3ea9f5;
+	    margin-top: 40px;
+	    text-align: center;
+	    width: 280px;
+	}
+}
+
+.search-page .search-container .search-form {
+	margin: 0px auto;
+	margin-top: 20px;
+}
+
+.search-page .search-container .search-form .search-form-item {
+	margin-top: 80px;
+}
+
+.search-page .search-container .search-form .search-space {
+	color: #FFF;
+	font-size: 24px;
+}
+
+@media (max-width: 1024px) {
+	.search-page .search-container .search-form .search-space {
+		color: #FFF;
+		font-size: 22px;
+	}
+}
+
+@media (max-width: 768px) {
+	.search-page .search-container .search-form .search-space {
+		color: #FFF;
+		font-size: 20px;
+	}
+}
+
+.search-page .search-container .search-country-select {
+	float: right;
+	margin-top: 20px;
+}
+
+@media (max-width: 1024px) {
+
+}
+
+.search-page .search-container .search-form input {
+	background: #FFF;
+	padding: 30px 14px;
+}
+
+.search-page .search-container .search-form .search-next-btn {
+	text-align: right;
+	color: #FFF;
+}
+
+.search-page .search-container .search-form .search-prev-btn {
+	text-align: left;
+	color: #FFF;
+}
+
+.search-page .search-container .search-form input[type="button"] {
+	margin: 0;
+    padding: 0;
+    width: 100%;
+    height: auto;
+    color: white;
+    font-family: "Whitney A", "Whitney B", "Avenir", Helvetica, sans-serif;
+    font-size: 17px;
+    left: 0;
+    padding: 21px;
+    position: relative;
+    font-weight: 600;
+    width: 100%;
+    text-transform: none;
+    letter-spacing: 0px;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border: 0px;
+    background-color: #2f5eba;
+}
+
+.search-page .search-container .search-form select {
+	margin: 0;
+    padding: 0;
+    width: 100%;
+    height: auto;
+    color: #999;
+    font-family: "Whitney A", "Whitney B", "Avenir", Helvetica, sans-serif;
+    font-size: 17px;
+    left: 0;
+    padding: 21px;
+    position: relative;
+    width: 100%;
+    text-transform: none;
+    letter-spacing: 0px;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border: 0px;
+    background-color: #FFF;
+}
+
+.search-page .search-container .search-list {
+
+}
+
+.search-page .search-container .search-list table {
+    width: 100%;
+}
+
+.search-page .search-container .search-list table th {
+    color: #FFF;
+    background-color: #2f5eba;
+    height: 56px;
+    text-align: center;
+}
+
+.search-page .search-container .search-list table tr {
+    color: #FFF;
+    height: 48px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.search-page .search-container .search-list table tr:hover {
+    background-color: #3ea9f5;
+    color: #2f5eba;
+}

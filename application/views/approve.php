@@ -99,13 +99,13 @@ $client = $clients[0];
                 <div class="col-md-12 approve-form approve-second">
                     <form role="form">
                         <div class="col-md-4 form-group">
-                            <img src="/img/coffee.jpg"/>
+                            <img src="/asset/img/coffee.jpg"/>
                         </div>
                         <div class="col-md-4 form-group">
-                            <img src="/img/baseball.png"/>
+                            <img src="/asset/img/baseball.png"/>
                         </div>
                         <div class="col-md-4 form-group">
-                            <img src="/img/cat-eye.jpg"/>
+                            <img src="/asset/img/cat-eye.jpg"/>
                         </div>
                         <div class="col-md-4 form-group">
                             <input type="text" class="form-control" id="email" placeholder="Valid" />
@@ -126,7 +126,7 @@ $client = $clients[0];
                             &nbsp;
                         </div>
                         <div class="col-md-4 form-group">
-                            <br><img src="/img/cat-eye.jpg"/>
+                            <br><img src="/asset/img/cat-eye.jpg"/>
                         </div>
                     </form>
                 </div>

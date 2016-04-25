@@ -4,11 +4,11 @@ $(document).ready (function () {
 		var email = $("#email").val();
 		var password = $("#password").val();
 
-		if (email != "") {
+		//if (email != "") {
 			$("#login_form").attr("action", "/pages/searchusers");
-		} else {
+		/*} else {
 			$("#login_form").attr("action", "/user/unapprove");
-		}
+		}*/
 
 		$("#login_form").submit();
 	});

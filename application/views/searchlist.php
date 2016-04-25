@@ -41,7 +41,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                 <td><?=++$start?></td>
                                 <td><?=$client->NRN?></td>
                                 <td><?=$client->STR_FN1?></td>
-                                <td><?=$client->STR_FN2?></td>
+                                <td><?=$client->STR_LN?></td>
                             </tr>
                             <?php
                             }

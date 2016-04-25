@@ -53,7 +53,7 @@ class Pages extends CI_Controller {
 		if  ($nrn)
 			$where['NRN'] = $nrn;
 		if  ($lname)
-			$where['STR_FN2'] = $lname;
+			$where['STR_LN'] = $lname;
 		if  ($fname)
 			$where['STR_FN1'] = $fname;
 

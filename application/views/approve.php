@@ -32,10 +32,10 @@ $client = $clients[0];
                             <input type="text" class="form-control" id="first_name" placeholder="First" value="<?=$client->STR_FN1?>" />
                         </div>
                         <div class="col-md-4 form-group">
-                            <input type="text" class="form-control" id="middle_name" placeholder="Middle" />
+                            <input type="text" class="form-control" id="middle_name" placeholder="Middle" value="<?=$client->STR_FN2?>" />
                         </div>
                         <div class="col-md-4 form-group">
-                            <input type="text" class="form-control" id="last_name" placeholder="Last" value="<?=$client->STR_FN2?>" />
+                            <input type="text" class="form-control" id="last_name" placeholder="Last" value="<?=$client->STR_LN?>" />
                         </div>
                         <div class="col-md-4 form-group">
                             <input type="text" class="form-control" id="email" placeholder="email" />

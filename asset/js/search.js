@@ -48,7 +48,7 @@ $(document).ready (function () {
 			var country_code = NRN.substring(6, 8);
 
 			var DOB = day + "-" + month + "-" + year;
-			var POB = country_code == '00' ? 'Barbados' : 'United State';
+			var POB = get_pob (country_code);
 			var nationality = get_nationality (country_code);
 			var country = "";
 
@@ -262,9 +262,18 @@ $(document).ready (function () {
 		if (code == '00')
 			return 'Barbadian';
 		else if (code == '01') 
-			return'American';
+			return'Barbadian';
 		else
 			return'Barbadian';
+	}
+
+	function get_pob (code) {
+		if (code == '00')
+			return 'Barbados';
+		else if (code == '01')
+			return 'Barbados';
+		else
+			return 'Barbados';
 	}
 
 });

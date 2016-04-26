@@ -765,3 +765,123 @@ option {
     cursor: pointer;
     text-decoration: none;
 }
+
+#profileModal {
+    color: #999;
+}
+
+.modal-dialog {
+    width: 1200px;
+}
+
+@media (max-width: 1600px) {
+    .modal-dialog {
+        width: 1000px;
+    }
+}
+
+@media (max-width: 1440px) {
+    .modal-dialog {
+        width: 900px;
+    }
+}
+
+@media (max-width: 1392px) {
+    .modal-dialog {
+        width: 800px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .modal-dialog {
+        width: 700px;
+    }
+}
+
+.modal-dialog .modal-content .modal-header h2 {
+    font-size: 24px;
+    color: #999;
+    text-align: center;
+}
+
+.modal-dialog .modal-content .modal-header h4 {
+    font-size: 18px;
+    color: #999;
+    text-align: center;
+    width: 100%;
+}
+
+.modal-dialog .modal-content .modal-header button span {
+    color: #666;
+}
+
+.modal-dialog .modal-content .modal-body {
+    
+}
+
+.modal-dialog .modal-content .modal-body .approve-first {
+
+}
+
+.modal-dialog .modal-content .modal-body .approve-second {
+    display: none;
+}
+
+.modal-dialog .modal-content .modal-body .approve-third {
+    display: none;
+}
+
+.modal-dialog .modal-content .modal-body .approve-prev-btn {
+    text-align: left;
+}
+
+.modal-dialog .modal-content .modal-body .approve-next-btn {
+    text-align: right;
+}
+
+.modal-dialog .modal-content .modal-body .approve-prev-btn span {
+    color: #999;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.modal-dialog .modal-content .modal-body .approve-next-btn span {
+    color: #999;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.modal-dialog .modal-content .modal-body .approve-form .label-text {
+    background-color: #fff;
+    border: 1px solid #999;
+    border-radius: .25em;
+    height: 34px;
+    width: 98%;
+    padding: 7px 10px;
+    color: #bbb;
+}
+
+.modal-dialog .modal-content .modal-body .approve-second .form-group img {
+    width: 100%;
+    border-radius: .4em;
+    border: 2px solid #eee;
+}
+
+
+.modal-dialog .modal-content .modal-body .approve-second .form-group input[type="button"] {
+    color: #FFF;
+    background-color: #2f5eba;
+}
+
+.label-text-label {
+    background-color: #0f9d58;
+    float: left;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 2px;
+    right: 22px;
+    border-radius: 4px;
+    color: #FFF;
+    display: none;
+}

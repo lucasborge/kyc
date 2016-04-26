@@ -38,6 +38,19 @@ class Pages extends CI_Controller {
 		$this->load->view('searchusers');
 	}
 
+	public function get_client ()
+	{
+		$nrn = $this->input->post('nrn');
+
+		$where = array ();
+		if  ($nrn)
+			$where['NRN'] = $nrn;
+
+		$client = $this->page_model->get_client_data ($where);
+		echo json_encode($client);
+		return;
+	}
+
 	public function searchlist()
 	{
 		if ($this->uri->segment(3))

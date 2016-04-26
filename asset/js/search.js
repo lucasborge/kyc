@@ -48,8 +48,9 @@ $(document).ready (function () {
 			var country_code = NRN.substring(6, 8);
 
 			var DOB = day + "-" + month + "-" + year;
-			var country = country_code == '00' ? 'Barbados' : 'United State';
+			var POB = country_code == '00' ? 'Barbados' : 'United State';
 			var nationality = country_code == '00' ? 'Barbadian' : 'American';
+			var country = "";
 
 			var verified = 0;
 			var id_documents = 0;
@@ -89,6 +90,15 @@ $(document).ready (function () {
 			} else {
 				$(".dob").css("color", "#bbb");
 				$(".dob-label").css("display", "none");
+			}
+			if (POB != "") {
+				$(".pob").text(POB);
+				$(".pob").css("color", "#666");
+				$(".pob-label").css("display", "block");
+				verified++;
+			} else {
+				$(".pob").css("color", "#bbb");
+				$(".pob-label").css("display", "none");
 			}
 			if (nationality != "") {
 				$(".nationality").text(nationality);
@@ -145,7 +155,7 @@ $(document).ready (function () {
 				$(".gender-label").css("display", "none");
 			}
 			if (country) {
-				$(".country").text(country);
+				$(".country").text("Country");
 				$(".country").css("color", "#666");
 				$(".country-label").css("display", "block");
 				verified++;

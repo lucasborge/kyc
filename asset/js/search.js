@@ -49,7 +49,7 @@ $(document).ready (function () {
 
 			var DOB = day + "-" + month + "-" + year;
 			var POB = country_code == '00' ? 'Barbados' : 'United State';
-			var nationality = country_code == '00' ? 'Barbadian' : 'American';
+			var nationality = get_nationality (country_code);
 			var country = "";
 
 			var verified = 0;
@@ -257,5 +257,14 @@ $(document).ready (function () {
 			current_page = "approve-second";
 		}
 	});
+
+	function get_nationality (code) {
+		if (code == '00')
+			return 'Barbadian';
+		else if (code == '01') 
+			return'American';
+		else
+			return'Barbadian';
+	}
 
 });

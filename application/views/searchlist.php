@@ -69,7 +69,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 <div class="modal-body">
                     <div class="col-md-12 approve-form approve-first">
                         <div class="row user-field">
-                            <label class="label-text-label-first"><i class='fa fa-user' aria-hidden='true'></i></label>
+                            <label class="label-text-label-first"><i class='fa fa-person-icon' aria-hidden='true'></i></label>
                             <div class="col-md-4 form-group">
                                 <div class="label-text first-name" >First Name</div><label class="label-text-label first-name-label"><i class='fa fa-check' aria-hidden='true'></i></label>
                             </div>
@@ -81,16 +81,16 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                             </div>
                         </div>
                         <div class="row user-field-none-display">
-                            <label class="label-text-label-first"><i class='fa fa-envelope' aria-hidden='true'></i></label>
+                            <label class="label-text-label-first"><i class='fa fa-email-icon' aria-hidden='true'></i></label>
                             <div class="col-md-4 form-group">
                                 <div class="label-text email" >Email</div><label class="label-text-label email-label"><i class='fa fa-check' aria-hidden='true'></i></label>
                             </div>
                             <div class="col-md-4 form-group">
-                                <label class="label-text-label-first"><i class='fa fa-mobile moble-icon' aria-hidden='true'></i></label>
-                                <div class="label-text mobile" >Mobile</div><label class="label-text-label mobile-label"><i class='fa fa-check' aria-hidden='true'></i></label>
+                                <label class="label-text-label-first"><i class='fa fa-mobile-icon' aria-hidden='true'></i></label>
+                                <div class="label-text mobile" >Mobile</div><label class="label-text-label"><i class='fa fa-check' aria-hidden='true'></i></label>
                             </div>
                             <div class="col-md-4 form-group">
-                                <label class="label-text-label-first"><i class='fa fa-phone' aria-hidden='true'></i></label>
+                                <label class="label-text-label-first"><i class='fa fa-phone-icon' aria-hidden='true'></i></label>
                                 <div class="label-text home" >Home</div><label class="label-text-label home-label"><i class='fa fa-check' aria-hidden='true'></i></label>
                             </div>
                         </div>
@@ -117,13 +117,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                 <div class="label-text passportno" >Passport No</div><label class="label-text-label passportno-label"><i class='fa fa-check' aria-hidden='true'></i></label>
                             </div>
                             <div class="col-md-4 form-group">
-                                <label class="label-text-label-first"><i class='fa fa-car unmoble-icon' aria-hidden='true'></i></label>
+                                <label class="label-text-label-first"><i class='fa fa-license-icon' aria-hidden='true'></i></label>
                                 <div class="label-text driverno" >Driver License No</div><label class="label-text-label driverno-label"><i class='fa fa-check' aria-hidden='true'></i></label>
                             </div>
                         </div>
                         <div class="row user-field-none-display"></div>
                         <div class="row user-field">
-                            <label class="label-text-label-first"><i class='fa fa-map-marker moble-icon' aria-hidden='true'></i></label>
+                            <label class="label-text-label-first"><i class='fa fa-marker-icon' aria-hidden='true'></i></label>
                             <div class="col-md-4 form-group">
                                 <div class="label-text paddress1" >Permanent Address</div><label class="label-text-label paddress1-label"><i class='fa fa-check' aria-hidden='true'></i></label>
                             </div>
@@ -145,7 +145,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                         </div>
                         <div class="row user-field-none-display"></div>
                         <div class="row user-field-none-display">
-                            <label class="label-text-label-first"><i class='fa fa-venus-mars' aria-hidden='true'></i></label>
+                            <label class="label-text-label-first"><i class='fa fa-gender-icon' aria-hidden='true'></i></label>
                             <div class="col-md-4 form-group">
                                 <div class="label-text gender" >Gender</div><label class="label-text-label gender-label"><i class='fa fa-check' aria-hidden='true'></i></label>
                             </div>
@@ -184,11 +184,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                         </div>
                         <div class="col-md-12 space-10"></div>
                         <div class="col-md-4 form-group">
-                            <label class="label-text-label-first"><i class='fa fa-plug icon-margin-left' aria-hidden='true'></i></label>
+                            <label class="label-text-label-first"><i class='fa fa-electronic-icon' aria-hidden='true'></i></label>
                             <div class="label-text electricity-bill-date" ><?=date('d-m-Y')?></div><label class="label-text-label electricity-bill-label"><i class='fa fa-check' aria-hidden='true'></i></label><br>
-                            <label class="label-text-label-first"><i class='fa fa-tap-icon icon-margin-left' aria-hidden='true'></i></label>
+                            <label class="label-text-label-first"><i class='fa fa-water-icon' aria-hidden='true'></i></label>
                             <div class="label-text telecom1-bill-date" ><?=date('d-m-Y')?></div><label class="label-text-label telecom1-bill-label"><i class='fa fa-check' aria-hidden='true'></i></label><br>
-                            <label class="label-text-label-first"><i class='fa fa-telephone-icon icon-margin-left' aria-hidden='true'></i></label>
+                            <label class="label-text-label-first"><i class='fa fa-telecom-icon' aria-hidden='true'></i></label>
                             <div class="label-text telecom2-bill-date" >Telecom Provider</div><label class="label-text-label telecom2-bill-label"><i class='fa fa-check' aria-hidden='true'></i></label>
                         </div>
                         <div class="col-md-4 form-group">

@@ -826,8 +826,8 @@ option {
 .modal-dialog .modal-content .modal-body .approve-first .user-field {
     border: 2px solid #E6F7CA;
     border-radius: 10px;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-top: 8px;
+    padding-bottom: 8px;
     margin-left: 0px;
     margin-right: 0px;
     width: 98%;
@@ -838,8 +838,8 @@ option {
 
 .modal-dialog .modal-content .modal-body .approve-first .user-field-none-display {
     border-radius: 10px;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-top: 8px;
+    padding-bottom: 8px;
     margin-left: 0px;
     margin-right: 0px;
     width: 98%;
@@ -878,7 +878,7 @@ option {
 
 .modal-dialog .modal-content .modal-body .approve-prev-btn span {
     color: #999;
-    font-size: 24px;
+    font-size: 20px;
     cursor: pointer;
 }
 
@@ -941,44 +941,94 @@ option {
     font-size: 26px;
 }
 
-.fa-baby-icon {
-    content: url('/asset/img/baby.png');
-    width: 32px;
+.fa-person-icon {
+    content: url('/asset/img/person.png');
+    width: 26px;
+    margin-left: -2px;
+    margin-top: 3px;
+}
+
+.fa-email-icon {
+    content: url('/asset/img/email.png');
+    width: 28px;
+    margin-left: -2px;
+    margin-top: 3px;
+}
+
+.fa-mobile-icon {
+    content: url('/asset/img/mobile.png');
+    width: 20px;
+    margin-left: 0px;
+}
+
+.fa-phone-icon {
+    content: url('/asset/img/phone.png');
+    width: 24px;
     margin-left: -4px;
+    margin-top: 2px;
+}
+
+.fa-baby-icon {
+    content: url('/asset/img/vital_records.png');
+    width: 28px;
+    margin-left: -4px;
+    margin-top: 3px;
 }
 
 .fa-police-icon {
     content: url('/asset/img/police.png');
     width: 24px;
     margin-top: 3px;
-    margin-left: -3px;
+    margin-left: -4px;
 }
 
 .fa-card-icon {
-    content: url('/asset/img/card.png');
-    width: 30px;
+    content: url('/asset/img/ID.png');
+    width: 28px;
+    margin-left: -2px;
     margin-top: 3px;
 }
 
-.icon-margin-left {
-    margin-left: -7px;
-}
-
-.fa-tap-icon {
-    content: url('/asset/img/tap.png');
-    width: 30px;
+.fa-license-icon {
+    content: url('/asset/img/license.png');
+    width: 24px;
+    margin-left: -4px;
     margin-top: 3px;
 }
 
-.fa-telephone-icon {
-    content: url('/asset/img/telephone.png');
-    width: 30px;
+.fa-marker-icon {
+    content: url('/asset/img/marker.png');
+    width: 28px;
+    margin-left: -4px;
     margin-top: 3px;
 }
 
-.valid-nrn-img-div {
-    padding-left: 0px;
-    font-size: 12px;
+.fa-gender-icon {
+    content: url('/asset/img/gender.png');
+    width: 28px;
+    margin-left: -2px;
+    margin-top: 3px;
+}
+
+.fa-electronic-icon {
+    content: url('/asset/img/electricity.png');
+    width: 24px;
+    margin-left: -4px;
+    margin-top: 3px;
+}
+
+.fa-telecom-icon {
+    content: url('/asset/img/tele-company.png');
+    width: 24px;
+    margin-left: -6px;
+    margin-top: 2px;
+}
+
+.fa-water-icon {
+    content: url('/asset/img/water.png');
+    width: 24px;
+    margin-left: -6px;
+    margin-top: 3px;
 }
 
 @media (max-width: 1023px) {
@@ -986,4 +1036,12 @@ option {
         padding-left: 15px;
         font-size: 18px;
     }
+}
+
+.valid-nrn-img-div {
+    padding-left: 0px;
+}
+
+.valid-nrn-img-div div {
+    font-size: 12px;
 }

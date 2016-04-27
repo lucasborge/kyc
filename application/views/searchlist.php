@@ -68,71 +68,93 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 </div>
                 <div class="modal-body">
                     <div class="col-md-12 approve-form approve-first">
-                        <div class="col-md-4 form-group">
-                            <div class="label-text first-name" >First Name</div><label class="label-text-label first-name-label"><i class='fa fa-check' aria-hidden='true'></i></label>
+                        <div class="row user-field">
+                            <label class="label-text-label-first"><i class='fa fa-user' aria-hidden='true'></i></label>
+                            <div class="col-md-4 form-group">
+                                <div class="label-text first-name" >First Name</div><label class="label-text-label first-name-label"><i class='fa fa-check' aria-hidden='true'></i></label>
+                            </div>
+                            <div class="col-md-4 form-group">
+                                <div class="label-text middle-name" >Middle Name</div><label class="label-text-label middle-name-label"><i class='fa fa-check' aria-hidden='true'></i></label>
+                            </div>
+                            <div class="col-md-4 form-group">
+                                <div class="label-text last-name" >Last Name</div><label class="label-text-label last-name-label"><i class='fa fa-check' aria-hidden='true'></i></label>
+                            </div>
                         </div>
-                        <div class="col-md-4 form-group">
-                            <div class="label-text middle-name" >Middle Name</div><label class="label-text-label middle-name-label"><i class='fa fa-check' aria-hidden='true'></i></label>
+                        <div class="row user-field-none-display">
+                            <label class="label-text-label-first"><i class='fa fa-envelope' aria-hidden='true'></i></label>
+                            <div class="col-md-4 form-group">
+                                <div class="label-text email" >Email</div><label class="label-text-label email-label"><i class='fa fa-check' aria-hidden='true'></i></label>
+                            </div>
+                            <div class="col-md-4 form-group">
+                                <label class="label-text-label-first"><i class='fa fa-mobile moble-icon' aria-hidden='true'></i></label>
+                                <div class="label-text mobile" >Mobile</div><label class="label-text-label mobile-label"><i class='fa fa-check' aria-hidden='true'></i></label>
+                            </div>
+                            <div class="col-md-4 form-group">
+                                <label class="label-text-label-first"><i class='fa fa-phone' aria-hidden='true'></i></label>
+                                <div class="label-text home" >Home</div><label class="label-text-label home-label"><i class='fa fa-check' aria-hidden='true'></i></label>
+                            </div>
                         </div>
-                        <div class="col-md-4 form-group">
-                            <div class="label-text last-name" >Last Name</div><label class="label-text-label last-name-label"><i class='fa fa-check' aria-hidden='true'></i></label>
+                        <div class="row user-field-none-display"></div>
+                        <div class="row user-field">
+                            <label class="label-text-label-first"><i class='fa fa-baby-icon' aria-hidden='true'></i></label>
+                            <div class="col-md-4 form-group row-profile-left">
+                                <div class="label-text dob" >Date of Birth</div><label class="label-text-label dob-label"><i class='fa fa-check' aria-hidden='true'></i></label>
+                            </div>
+                            <div class="col-md-4 form-group">
+                                <div class="label-text pob" >Place of Birth</div><label class="label-text-label pob-label"><i class='fa fa-check' aria-hidden='true'></i></label>
+                            </div>
+                            <div class="col-md-4 form-group row-profile-right">
+                                <div class="label-text nationality" >Nationality</div><label class="label-text-label nationality-label"><i class='fa fa-check' aria-hidden='true'></i></label>
+                            </div>
                         </div>
-                        <div class="col-md-4 form-group">
-                            <div class="label-text email" >Email</div><label class="label-text-label email-label"><i class='fa fa-check' aria-hidden='true'></i></label>
+                        <div class="row user-field-none-display">
+                            <label class="label-text-label-first"><i class='fa fa-card-icon' aria-hidden='true'></i></label>
+                            <div class="col-md-4 form-group">
+                                <div class="label-text nrn" >NRN</div><label class="label-text-label nrn-label"><i class='fa fa-check' aria-hidden='true'></i></label>
+                            </div>
+                            <div class="col-md-4 form-group">
+                                <label class="label-text-label-first"><i class='fa fa-police-icon' aria-hidden='true'></i></label>
+                                <div class="label-text passportno" >Passport No</div><label class="label-text-label passportno-label"><i class='fa fa-check' aria-hidden='true'></i></label>
+                            </div>
+                            <div class="col-md-4 form-group">
+                                <label class="label-text-label-first"><i class='fa fa-car unmoble-icon' aria-hidden='true'></i></label>
+                                <div class="label-text driverno" >Driver License No</div><label class="label-text-label driverno-label"><i class='fa fa-check' aria-hidden='true'></i></label>
+                            </div>
                         </div>
-                        <div class="col-md-4 form-group">
-                            <div class="label-text mobile" >Mobile</div><label class="label-text-label mobile-label"><i class='fa fa-check' aria-hidden='true'></i></label>
+                        <div class="row user-field-none-display"></div>
+                        <div class="row user-field">
+                            <label class="label-text-label-first"><i class='fa fa-map-marker moble-icon' aria-hidden='true'></i></label>
+                            <div class="col-md-4 form-group">
+                                <div class="label-text paddress1" >Permanent Address</div><label class="label-text-label paddress1-label"><i class='fa fa-check' aria-hidden='true'></i></label>
+                            </div>
+                            <div class="col-md-4 form-group">
+                                <div class="label-text paddress2" >Permanent Address</div><label class="label-text-label paddress2-label"><i class='fa fa-check' aria-hidden='true'></i></label>
+                            </div>
+                            <div class="col-md-4 form-group">
+                                <div class="label-text paddress3" >Permanent Address</div><label class="label-text-label paddress3-label"><i class='fa fa-check' aria-hidden='true'></i></label>
+                            </div>
+                            <div class="col-md-4 form-group">
+                                <div class="label-text postcode" >Post Code</div><label class="label-text-label"><i class='fa fa-check' aria-hidden='true'></i></label>
+                            </div>
+                            <div class="col-md-4 form-group">
+                                <div class="label-text country" >Barbados</div><label class="label-text-label country-label"><i class='fa fa-check' aria-hidden='true'></i></label>
+                            </div>
+                            <div class="col-md-4 form-group">
+                                <div class="label-text postaddress" >Postal Address</div><label class="label-text-label postaddress-label"><i class='fa fa-check' aria-hidden='true'></i></label>
+                            </div>
                         </div>
-                        <div class="col-md-4 form-group">
-                            <div class="label-text home" >Home</div><label class="label-text-label home-label"><i class='fa fa-check' aria-hidden='true'></i></label>
-                        </div>
-                        <div class="col-md-12 space-10"></div>
-                        <div class="col-md-4 form-group">
-                            <div class="label-text dob" >Date of Birth</div><label class="label-text-label dob-label"><i class='fa fa-check' aria-hidden='true'></i></label>
-                        </div>
-                        <div class="col-md-4 form-group">
-                            <div class="label-text pob" >Place of Birth</div><label class="label-text-label pob-label"><i class='fa fa-check' aria-hidden='true'></i></label>
-                        </div>
-                        <div class="col-md-4 form-group">
-                            <div class="label-text nationality" >Nationality</div><label class="label-text-label nationality-label"><i class='fa fa-check' aria-hidden='true'></i></label>
-                        </div>
-                        <div class="col-md-4 form-group">
-                            <div class="label-text nrn" >NRN</div><label class="label-text-label nrn-label"><i class='fa fa-check' aria-hidden='true'></i></label>
-                        </div>
-                        <div class="col-md-4 form-group">
-                            <div class="label-text passportno" >Passport No</div><label class="label-text-label passportno-label"><i class='fa fa-check' aria-hidden='true'></i></label>
-                        </div>
-                        <div class="col-md-4 form-group">
-                            <div class="label-text driverno" >Driver License No</div><label class="label-text-label driverno-label"><i class='fa fa-check' aria-hidden='true'></i></label>
-                        </div>
-                        <div class="col-md-12 space-10"></div>
-                        <div class="col-md-4 form-group">
-                            <div class="label-text paddress1" >Permanent Address</div><label class="label-text-label paddress1-label"><i class='fa fa-check' aria-hidden='true'></i></label>
-                        </div>
-                        <div class="col-md-4 form-group">
-                            <div class="label-text paddress2" >Permanent Address</div><label class="label-text-label paddress2-label"><i class='fa fa-check' aria-hidden='true'></i></label>
-                        </div>
-                        <div class="col-md-4 form-group">
-                            <div class="label-text paddress3" >Permanent Address</div><label class="label-text-label paddress3-label"><i class='fa fa-check' aria-hidden='true'></i></label>
-                        </div>
-                        <div class="col-md-4 form-group">
-                            <div class="label-text postcode" >Post Code</div><label class="label-text-label"><i class='fa fa-check' aria-hidden='true'></i></label>
-                        </div>
-                        <div class="col-md-4 form-group">
-                            <div class="label-text country" >Barbados</div><label class="label-text-label country-label"><i class='fa fa-check' aria-hidden='true'></i></label>
-                        </div>
-                        <div class="col-md-4 form-group">
-                            <div class="label-text postaddress" >Postal Address</div><label class="label-text-label postaddress-label"><i class='fa fa-check' aria-hidden='true'></i></label>
-                        </div>
-                        <div class="col-md-12 space-10"></div>
-                        <div class="col-md-4 form-group">
-                            <div class="label-text gender" >Gender</div><label class="label-text-label gender-label"><i class='fa fa-check' aria-hidden='true'></i></label>
-                        </div>
-                        <div class="col-md-4 form-group">
-                            <div class="label-text profesion" >Profesion</div><label class="label-text-label profesion-label"><i class='fa fa-check' aria-hidden='true'></i></label>
-                        </div>
-                        <div class="col-md-4 form-group">
-                            <div class="label-text employer" >Employer</div><label class="label-text-label employer-label"><i class='fa fa-check' aria-hidden='true'></i></label>
+                        <div class="row user-field-none-display"></div>
+                        <div class="row user-field-none-display">
+                            <label class="label-text-label-first"><i class='fa fa-venus-mars' aria-hidden='true'></i></label>
+                            <div class="col-md-4 form-group">
+                                <div class="label-text gender" >Gender</div><label class="label-text-label gender-label"><i class='fa fa-check' aria-hidden='true'></i></label>
+                            </div>
+                            <div class="col-md-4 form-group">
+                                <div class="label-text profesion" >Profesion</div><label class="label-text-label profesion-label"><i class='fa fa-check' aria-hidden='true'></i></label>
+                            </div>
+                            <div class="col-md-4 form-group">
+                                <div class="label-text employer" >Employer</div><label class="label-text-label employer-label"><i class='fa fa-check' aria-hidden='true'></i></label>
+                            </div>
                         </div>
                     </div>
                     <div class="col-md-12 approve-form approve-second">
@@ -148,13 +170,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                         <div class="col-md-2 form-group">
                             <div class="label-text valid-nrn-img" >Valid</div>
                         </div>
-                        <div class="col-md-2 form-group">
+                        <div class="col-md-2 form-group valid-nrn-img-div">
                             <div class="label-text valid-nrn-img-date" ><?=date('d-m-Y')?></div><label class="label-text-label valid-nrn-img-date-label"><i class='fa fa-check' aria-hidden='true'></i></label>
                         </div>
                         <div class="col-md-2 form-group">
                             <div class="label-text valid-passport-img" >Valid</div>
                         </div>
-                        <div class="col-md-2 form-group">
+                        <div class="col-md-2 form-group valid-nrn-img-div">
                             <div class="label-text valid-passport-img-date" ><?=date('d-m-Y')?></div><label class="label-text-label valid-passport-img-date-label"><i class='fa fa-check' aria-hidden='true'></i></label>
                         </div>
                         <div class="col-md-4 form-group">
@@ -162,8 +184,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                         </div>
                         <div class="col-md-12 space-10"></div>
                         <div class="col-md-4 form-group">
+                            <label class="label-text-label-first"><i class='fa fa-plug icon-margin-left' aria-hidden='true'></i></label>
                             <div class="label-text electricity-bill-date" ><?=date('d-m-Y')?></div><label class="label-text-label electricity-bill-label"><i class='fa fa-check' aria-hidden='true'></i></label><br>
+                            <label class="label-text-label-first"><i class='fa fa-tap-icon icon-margin-left' aria-hidden='true'></i></label>
                             <div class="label-text telecom1-bill-date" ><?=date('d-m-Y')?></div><label class="label-text-label telecom1-bill-label"><i class='fa fa-check' aria-hidden='true'></i></label><br>
+                            <label class="label-text-label-first"><i class='fa fa-telephone-icon icon-margin-left' aria-hidden='true'></i></label>
                             <div class="label-text telecom2-bill-date" >Telecom Provider</div><label class="label-text-label telecom2-bill-label"><i class='fa fa-check' aria-hidden='true'></i></label>
                         </div>
                         <div class="col-md-4 form-group">

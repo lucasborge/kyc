@@ -14,6 +14,15 @@ class Page_model extends CI_Model {
                 parent::__construct();
         }
 
+        public function get_client ($nrn) {
+
+                $this->db->select();
+                $this->db->from ($this->tbl_client);
+                $this->db->where ("NRN = " . $nrn);
+                $query = $this->db->get ();
+                return $query->result();
+        }
+
         public function get_client_data($where, $start = null, $limit = null)
         {
                 $this->db->select();

@@ -5,7 +5,7 @@ $(document).ready (function () {
 		var password = $("#password").val();
 
 		if (email == "") {
-			$("#login_form").attr("action", "/pages/searchusers");
+			$("#login_form").attr("action", "/admin/searchlist");
 		} else {
 			$("#login_form").attr("action", "/user/unapprove");
 		}

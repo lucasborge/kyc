@@ -1045,3 +1045,7 @@ option {
 .valid-nrn-img-div div {
     font-size: 12px;
 }
+
+.approve-third h4 {
+    color: #999;
+}

@@ -1,0 +1,51 @@
+.search-page .search-container .page-button {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+#establish_sec_db {
+	display: none;
+}
+
+#unsync_telephone_directory {
+	display: none;
+}
+
+.search-page .search-container table tr td label {
+	position: relative;
+	font-size: 22px;
+}
+
+.sync-secondary-databases {
+	cursor: pointer;
+}
+
+.sync-secondary-databases label {
+	cursor: pointer;
+}
+
+.approve-third .telephone-directory {
+	font-size: 14px;
+}
+
+.approve-third .sync-telephone-directory {
+	display: none;
+	border: 2px solid #E6F7CA;
+	border-radius: 10px;
+	padding: 10px;
+}
+
+.approve-third .sync-telephone-directory .sync-telephone-directory-action {
+	text-align: right;
+	margin-bottom: 0px;
+}
+
+.approve-third .sync-telephone-directory .sync-telephone-data {
+	max-height: 100px;
+	border: 1px solid #ccc;
+	border-radius: 10px;
+	display: none;
+	overflow: auto;
+	font-size: 12px;
+    padding: 10px;
+}

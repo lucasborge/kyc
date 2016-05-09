@@ -7,6 +7,7 @@ class Page_model extends CI_Model {
         public $content;
         public $date;
         private $tbl_client = "clients";
+        private $tbl_pclient = "pclients";
 
         public function __construct()
         {
@@ -20,6 +21,25 @@ class Page_model extends CI_Model {
                 $this->db->from ($this->tbl_client);
                 $this->db->where ("NRN = " . $nrn);
                 $query = $this->db->get ();
+                return $query->result();
+        }
+
+        public function get_client_private_data($where, $start = null, $limit = null)
+        {
+                $this->db->select();
+                $this->db->from ($this->tbl_pclient);
+
+                foreach ($where as $field => $value) {
+                        $this->db->like ($field, $value);
+                }
+                $this->db->order_by ('NRN', 'ASC');
+
+                if (!is_null ($start) || !is_null ($limit)) {
+                        $this->db->limit ($limit, $start);
+                }
+                
+                $query = $this->db->get ();
+
                 return $query->result();
         }
 

@@ -4,12 +4,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<title>Welcome to CodeIgniter</title>
+	<title>CariKYC-Signup</title>
 
 	<link rel="stylesheet" href="/asset/css/bootstrap.min.css" />
 	<link rel="stylesheet" href="/asset/css/bootstrap-theme.min.css" />
-	<script type="text/javascript" scr="/asset/js/bootstrap.min.js"></script>
-	<script type="text/javascript" scr="/asset/js/jquery-2.1.1.min.js"></script>
+	<script type="text/javascript" src="/asset/js/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="/asset/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/asset/js/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="/asset/js/signup.js"></script>
 
 	<link rel="stylesheet" href="/asset/css/style.css" />
 </head>
@@ -25,7 +27,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                         </a>
                     </div>
                     <div class="login-button">
-                        <a href="/user/login">Login</a>
+                        <a href="/users">Login</a>
                     </div>
                 </div>
             </div>
@@ -35,18 +37,18 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     <h4>Use KYC and all its features for free, forever!</h4>
                 </div>
                 <div class="col-md-12 signup-form">
-                    <form role="form">
+                    <form role="form" id="register_form" method="post" novalidate="novalidate" action="/signup/setprofile">
                         <div class="col-md-6 form-group">
-                            <input type="text" class="form-control" id="first_name" placeholder="First Name" />
+                            <input type="text" class="form-control" id="first_name" name="firstname" placeholder="First Name" />
                         </div>
                         <div class="col-md-6 form-group">
-                            <input type="text" class="form-control" id="last_name" placeholder="Last Name" />
+                            <input type="text" class="form-control" id="last_name" name="lastname" placeholder="Last Name" />
                         </div>
                         <div class="col-md-6 form-group">
-                            <input type="text" class="form-control" id="email" placeholder="Your email" />
+                            <input type="text" class="form-control" id="email" name="email" placeholder="Your email" />
                         </div>
                         <div class="col-md-6 form-group">
-                            <select class="form-control" id="country">
+                            <select class="form-control" id="country" name="country">
                                 <option>Barbados</option>
                                 <option>Denmark</option>
                                 <option>England</option>
@@ -54,19 +56,19 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                             </select>
                         </div>
                         <div class="col-md-6 form-group">
-                            <input type="text" class="form-control" id="mobile_number" placeholder="Your mobile number" />
+                            <input type="text" class="form-control" id="mobile_number" name="mobilenumber" placeholder="Your mobile number" />
                         </div>
                         <div class="col-md-6 form-group">
-                            <input type="text" class="form-control" id="password" placeholder="Set your password" />
+                            <input type="text" class="form-control" id="password" name="password" placeholder="Set your password" />
                         </div>
                         <div class="col-md-6 form-group">
-                            <input type="text" class="form-control" id="region_number" placeholder="National Region Number" />
+                            <input type="text" class="form-control" id="region_number" name="region_number" placeholder="National Region Number" />
                         </div>
                         <div class="col-md-6 form-group">
-                            <input type="checkbox" id="nrn" name="nrn" class="form-control" /><label>If you do not have a NRN</label>
+                            <input type="checkbox" id="nrn" name="nrn" class="form-control" /> If you do not have a NRN
                         </div>
                         <div class="col-md-12 form-group">
-                            <input type="button" id="nrn" name="nrn" class="form-control" value="Create account" />
+                            <input type="button" id="signup_btn" class="form-control" value="Create account" />
                         </div>
                     </form>
                 </div>

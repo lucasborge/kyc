@@ -28,6 +28,14 @@ h2 {
     letter-spacing: 0px;
 }
 
+h3 {
+    color: white;
+    font-family: "Whitney A", "Whitney B", "Avenir", Helvetica, sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: 0px;
+}
+
 h4 {
     color: white;
     font-size: 18px;
@@ -49,10 +57,17 @@ span {
 	color: #FFF;
 }
 
+.ui-datepicker table thead tr th span {
+    color: #444;
+}
+
 @media (max-width: 600px) {
 	h2 {
 	    font-size: 24px;
 	}
+    h3 {
+        font-size: 20px;
+    }
 	h4 {
 	    font-size: 16px;
 	    line-height: 18px;
@@ -235,9 +250,9 @@ span {
 }
 
 .signup-container .signup-form input[type="checkbox"] {
-    margin: 0;
+    margin: 25px 0px;
     padding: 0;
-    width: 100%;
+    width: 20px;
     color: #FFF;
     box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -250,6 +265,7 @@ span {
     border-radius: 4px;
     -moz-border-radius: 4px;
     -webkit-border-radius: 4px;
+    line-height: 70px;
 }
 
 .signup-container .signup-form input[type="button"] {
@@ -520,7 +536,7 @@ option {
 	}
 }
 
-.approve-page .approve-container .approve-second, .approve-third {
+.approve-page .approve-container .approve-second, .approve-third, .approve-forth {
     display: none;
 }
 
@@ -532,6 +548,7 @@ option {
 .approve-page .approve-container .approve-form input {
 	background: #FFF;
 	padding: 26px 14px;
+    font-size: 16px;
 }
 
 .approve-page .approve-container .approve-next-btn {
@@ -1048,4 +1065,73 @@ option {
 
 .approve-third h4 {
     color: #999;
+}
+
+.error {
+    border:1px solid #F00 !important;
+    color: #F00;
+}
+
+.form-group label {
+    position: absolute;
+    bottom: 70px;
+    right: -23.25%;
+    z-index: 11;
+    text-transform: none;
+    margin-top: 0;
+    margin-bottom: 1em;
+    background-color: #D95C5C!important;
+    border-color: #D95C5C!important;
+    color: #FFF!important;
+    padding: .5em .8em;
+    display: inline-block;
+    vertical-align: middle;
+    margin: -.25em .25em 0;
+    font-weight: 400;
+    border-radius: .325em;
+    box-sizing: border-box;
+    -webkit-transition: background .1s linear;
+    transition: background .1s linear;
+}
+
+.form-group label:before {
+    margin-left: -.3em;
+    top: auto;
+    right: auto;
+    bottom: -.3em;
+    left: 50%;
+    position: absolute;
+    width: .6em;
+    height: .6em;
+    transform: rotate(45deg);
+    z-index: 12;
+    -webkit-transition: background .1s linear;
+    transition: background .1s linear;
+    background-color: #E8E8E8;
+    background-color: #D95C5C!important;
+    content: "";
+}
+
+.signature-image {
+    border-radius: 0.5em;
+    border: 3px solid #63BB47;
+    height: 100px;
+    width: 100%;
+}
+
+.signature-image-file {
+    display: none !important;
+}
+
+.signature-image-file-upload {
+    padding: 5px 10px !important;
+    background-image: -webkit-linear-gradient(top,#5cb85c 0,#419641 100%) !important;
+    background-image: linear-gradient(to bottom,#5cb85c 0,#419641 100%) !important;
+    background-repeat: repeat-x;
+    border-color: #3e8f3e !important;
+    margin-top: 5px;
+}
+
+.btn-revoke {
+    margin-top: 10px;
 }

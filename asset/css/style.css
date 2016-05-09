@@ -1072,7 +1072,7 @@ option {
     color: #F00;
 }
 
-.form-group label {
+.signup-form .form-group label {
     position: absolute;
     bottom: 70px;
     right: -23.25%;
@@ -1094,7 +1094,7 @@ option {
     transition: background .1s linear;
 }
 
-.form-group label:before {
+.signup-form .form-group label:before {
     margin-left: -.3em;
     top: auto;
     right: auto;

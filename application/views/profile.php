@@ -25,7 +25,7 @@ $client = $client[0];
         <div class="container">
             <div class="row approve-container">
                 <div class="col-md-12 approve-title">
-                    <h2>Client Approved Acces to private Records</h2>
+                    <h2>Client Approved Access To Private Records</h2>
                     <h4>Client is 80% Verified and ID Documents are partially, 33% up to date</h4>
                 </div>
                 <div class="col-md-12 approve-form approve-first">
@@ -81,7 +81,7 @@ $client = $client[0];
                             <input type="text" class="form-control" id="post_code" name="post_code" placeholder="Post code" value="<?=$client['POST_CODE']?>" />
                         </div>
                         <div class="col-md-4 form-group">
-                            <input type="text" class="form-control" id="country" name="country" placeholder="Country" value="Babados" />
+                            <input type="text" class="form-control" id="country" name="country" placeholder="Country" value="Barbados" />
                         </div>
                         <div class="col-md-4 form-group">
                             <input type="text" class="form-control" id="postal_addr" name="postal_addr" placeholder="Postal Address" value="<?=$client['POSTAL_ADDRESS']?>" />
@@ -91,7 +91,7 @@ $client = $client[0];
                             &nbsp;
                         </div>
                         <div class="col-md-4 form-group">
-                            <input type="text" class="form-control" id="profesion" name="profesion" placeholder="Profesion" />
+                            <input type="text" class="form-control" id="profesion" name="profesion" placeholder="Profession" />
                         </div>
                         <div class="col-md-4 form-group">
                             <input type="text" class="form-control" id="employer" name="employer" placeholder="Employer" />

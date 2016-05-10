@@ -67,7 +67,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    <h2 id="profileModalLabel">Client Approved Acces to private Records</h2>
+                    <h2 id="profileModalLabel">Client Approved Access To Private Records</h2>
                     <h4 class="modal-title"></h4>
                 </div>
                 <div class="modal-body">
@@ -154,7 +154,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                 <div class="label-text gender" >Gender</div><label class="label-text-label gender-label"><i class='fa fa-check' aria-hidden='true'></i></label>
                             </div>
                             <div class="col-md-4 form-group">
-                                <div class="label-text profesion" >Profesion</div><label class="label-text-label profesion-label"><i class='fa fa-check' aria-hidden='true'></i></label>
+                                <div class="label-text profesion" >Profession</div><label class="label-text-label profesion-label"><i class='fa fa-check' aria-hidden='true'></i></label>
                             </div>
                             <div class="col-md-4 form-group">
                                 <div class="label-text employer" >Employer</div><label class="label-text-label employer-label"><i class='fa fa-check' aria-hidden='true'></i></label>

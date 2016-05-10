@@ -72,7 +72,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    <h2 id="profileModalLabel">Client Approved Acces to private Records</h2>
+                    <h2 id="profileModalLabel">Client Approved Access To Private Records</h2>
                     <h4 class="modal-title"></h4>
                 </div>
                 <div class="modal-body">
@@ -159,7 +159,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                 <div class="label-text gender" >Gender</div><label class="label-text-label gender-label"><i class='fa fa-check' aria-hidden='true'></i></label>
                             </div>
                             <div class="col-md-4 form-group">
-                                <div class="label-text profesion" >Profesion</div><label class="label-text-label profesion-label"><i class='fa fa-check' aria-hidden='true'></i></label>
+                                <div class="label-text profesion" >Profession</div><label class="label-text-label profesion-label"><i class='fa fa-check' aria-hidden='true'></i></label>
                             </div>
                             <div class="col-md-4 form-group">
                                 <div class="label-text employer" >Employer</div><label class="label-text-label employer-label"><i class='fa fa-check' aria-hidden='true'></i></label>
@@ -228,9 +228,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                             <button type="button" class="btn btn-primary" id="unsync_telephone_directory" >Unync Telephone Directory</button>
                         </div>
                         <div class="col-md-12 form-group sync-telephone-directory">
-                            <div class="col-md-4 form-group"><input type="text" class="form-control" id="first_name" placeholder="First" value="" /></div>
-                            <div class="col-md-4 form-group"><input type="text" class="form-control" id="middle_name" placeholder="Middle" value="" /></div>
-                            <div class="col-md-4 form-group"><input type="text" class="form-control" id="last_name" placeholder="Last" value="" /></div>
+                            <div class="col-md-4 form-group"><input type="text" class="form-control" id="name" placeholder="Name" value="" /></div>
+                            <div class="col-md-4 form-group"><input type="text" class="form-control" id="address" placeholder="Address" value="" /></div>
+                            <div class="col-md-4 form-group"><input type="text" class="form-control" id="tel_number" placeholder="Telephone Number" value="" /></div>
                             <div class="col-md-8 form-group">
                                 <div class="sync-telephone-data"></div>
                             </div>

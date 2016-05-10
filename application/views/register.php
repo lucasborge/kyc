@@ -33,8 +33,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             </div>
             <div class="row signup-container">
                 <div class="col-md-12 signup-title">
-                    <h2>Sign up for your free KYC account</h2>
-                    <h4>Use KYC and all its features for free, forever!</h4>
+                    <h2>Sign up for your free CariKYC account</h2>
+                    <h4>Use CariKYC and all its features for free, forever!</h4>
                 </div>
                 <div class="col-md-12 signup-form">
                     <form role="form" id="register_form" method="post" novalidate="novalidate" action="/signup/setprofile">
@@ -62,7 +62,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                             <input type="text" class="form-control" id="password" name="password" placeholder="Set your password" />
                         </div>
                         <div class="col-md-6 form-group">
-                            <input type="text" class="form-control" id="region_number" name="region_number" placeholder="National Region Number" />
+                            <input type="text" class="form-control" id="region_number" name="region_number" placeholder="National Registration Number" />
                         </div>
                         <div class="col-md-6 form-group">
                             <input type="checkbox" id="nrn" name="nrn" class="form-control" /> If you do not have a NRN

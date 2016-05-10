@@ -29,7 +29,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                         <div class="col-md-12">
                             <div class="col-md-4 search-country-select">
                                 <select id="country" name="country">
-                                    <option selected>Babados</option>
+                                    <option selected>Barbados</option>
                                 </select>
                             </div>
                         </div>

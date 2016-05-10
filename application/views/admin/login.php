@@ -39,7 +39,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                             <input type="button" class="form-control" value="LOGIN" id="login" />
                         </div>
                         <div class="col-md-8 form-group login-remember">
-                            <input type="checkbox" id="nrn" name="nrn" /> Remeber Me
+                            <input type="checkbox" id="nrn" name="nrn" /> Remember Me
                         </div>
                     </form>
                 </div>

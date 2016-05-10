@@ -6,7 +6,7 @@ class Tele_model extends CI_Model {
         public $title;
         public $content;
         public $date;
-        private $tbl_secondary = "secondary";
+        private $tbl_secondary = "telephone_directory";
         private $tbl_sync_telephone = "sync_telephone";
 
         public function __construct()
@@ -17,17 +17,12 @@ class Tele_model extends CI_Model {
 
         public function get_telephone_data($where, $nrn_status = false)
         {
-                $this->db->select();
-                $this->db->from ($this->tbl_secondary);
-
+                $str = "";
                 foreach ($where as $field => $value) {
-                        $this->db->like ($field, $value);
+                        $str .= " and " . $field . " like '%" . $value . "%'";
                 }
-                
-                if (!$nrn_status)
-                        $this->db->where ("NRN IS NULL OR NRN = ''");
 
-                $query = $this->db->get ();
+                $query = $this->db->query("select * from " . $this->tbl_secondary . " where 1 " . $str . " limit 10");
 
                 return $query->result();
         }

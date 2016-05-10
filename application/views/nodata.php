@@ -21,7 +21,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <div class="container">
             <div class="row approve-container">
                 <div class="col-md-12 approve-title">
-                    <h2>Client Approved Acces to private Records</h2>
+                    <h2>Client Approved Access To Private Records</h2>
                     <h4>Client is 80% Verified and ID Documents are partially, 33% up to date</h4>
                 </div>
                 <div class="col-md-12 approve-form approve-first">

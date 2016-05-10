@@ -35,35 +35,29 @@ $(document).ready (function () {
 	});
 
 	$('#establish_sec_db').click (function () {
-		var first = $('#first_name').val();
-		var middle = $('#middle_name').val();
-		var last = $('#last_name').val();
+		var name = $('#name').val();
+		var address = $('#address').val();
+		var tel_number = $('#tel_number').val();
 
-		$.ajax({url:"/admin/sync_telephone_directory", type:"post", data:{'first':first, 'middle':middle, 'last':last}}).done(function(data) {
-
+		$.ajax({url:"/admin/sync_telephone_directory", type:"post", data:{'name':name, 'address':address, 'tel_number':tel_number}}).done(function(data) {
 			var datas = jQuery.parseJSON(data);
 			var html = "";
 
 			for (var i = 0; i < datas.length; i++) {
 				var tele_data = datas[i];
 				var id = tele_data['id'];
-				var fname1 = tele_data['FNAME1'] == null ? "" : tele_data['FNAME1'];
-				var fname2 = tele_data['FNAME2'] == null ? "" : tele_data['FNAME2'];
-				var fname3 = tele_data['FNAME3'] == null ? "" : tele_data['FNAME3'];
-				var lname = tele_data['LNAME'] == null ? "" : tele_data['LNAME'];
-				var tel_number = tele_data['TEL_NUMBER'] == null ? "" : tele_data['TEL_NUMBER'];
-				var add1 = tele_data['ADDRESS1'] == null ? "" : tele_data['ADDRESS1'];
-				var add2 = tele_data['ADDRESS2'] == null ? "" : tele_data['ADDRESS2'];
-				var parish = tele_data['PARISH'] == null ? "" : tele_data['PARISH'];
+				var fname = tele_data['NAME'] == null ? "" : tele_data['NAME'];
+				var tel_number = tele_data['PHONE_NUMBER'] == null ? "" : tele_data['PHONE_NUMBER'];
+				var address = tele_data['ADDRESS'] == null ? "" : tele_data['ADDRESS'];
 				var country = tele_data['COUNTRY'] == null ? "" : tele_data['COUNTRY'];
 				var updated = tele_data['DATE_UPDATED'] == null ? "" : tele_data['DATE_UPDATED'];
 				var entry = tele_data['EXACT_DIRECTORY_ENTRY'] == null ? "" : tele_data['EXACT_DIRECTORY_ENTRY'];
 
-				var sync_data = fname1 + " " + fname2 + " " + fname3 + " " + lname;
-				sync_data += "&nbsp; " + add1 + " " + add2 + ", " + parish;
-				sync_data += "&nbsp; " + tel_number;
+				var sync_data = fname;
+				sync_data += "&nbsp;&nbsp; " + address;
+				sync_data += "&nbsp;&nbsp; " + tel_number;
 
-				html += "<input type='radio' class='sel-sync-person' id='" + id + "' name='sync_person'/>&nbsp;<label>" + sync_data + "</label><br>";
+				html += "<input type='radio' class='sel-sync-person' id='" + id + "' name='sync_person'/>&nbsp; " + sync_data + "<br>";
 			}
 			
 			html = html == "" ? "There is no data." : html;
@@ -79,20 +73,15 @@ $(document).ready (function () {
 					var t = jQuery.parseJSON(data)[0];
 
 					var id = t['id'];
-					var fname1 = t['FNAME1'] == null ? "" : t['FNAME1'];
-					var fname2 = t['FNAME2'] == null ? "" : t['FNAME2'];
-					var fname3 = t['FNAME3'] == null ? "" : t['FNAME3'];
-					var lname = t['LNAME'] == null ? "" : t['LNAME'];
-					var tel_number = t['TEL_NUMBER'] == null ? "" : t['TEL_NUMBER'];
-					var add1 = t['ADDRESS1'] == null ? "" : t['ADDRESS1'];
-					var add2 = t['ADDRESS2'] == null ? "" : t['ADDRESS2'];
-					var parish = t['PARISH'] == null ? "" : t['PARISH'];
+					var fname = t['NAME'] == null ? "" : t['NAME'];
+					var tel_number = t['PHONE_NUMBER'] == null ? "" : t['PHONE_NUMBER'];
+					var address = t['ADDRESS'] == null ? "" : t['ADDRESS'];
 					var country = t['COUNTRY'] == null ? "" : t['COUNTRY'];
 					var updated = t['DATE_UPDATED'] == null ? "" : t['DATE_UPDATED'];
 					var entry = t['EXACT_DIRECTORY_ENTRY'] == null ? "" : t['EXACT_DIRECTORY_ENTRY'];
 
-					var sync_data = fname1 + " " + fname2 + " " + fname3 + " " + lname;
-					sync_data += " " + add1 + " " + add2 + ", " + parish;
+					var sync_data = fname;
+					sync_data += " " + address;
 					sync_data += " " + tel_number;
 					
 					$('.telephone-directory').text(sync_data);
@@ -108,8 +97,11 @@ $(document).ready (function () {
 				});
 			});
 		})
-		.fail(function() {
-			alert("error");
+		.fail(function(e) {
+			var str = "";
+			for(i in e)
+				str += i+":"+e[i];
+			alert(str);
 		});
 	});
 

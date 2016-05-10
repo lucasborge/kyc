@@ -138,17 +138,17 @@ class Admin extends CI_Controller {
 	}
 
 	public function sync_telephone_directory () {
-		$first = $this->input->post('first');
-		$middle = $this->input->post('middle');
-		$last = $this->input->post('last');
+		$name = $this->input->post('name');
+		$address = $this->input->post('address');
+		$tel_number = $this->input->post('tel_number');
 
 		$where = array ();
-		if  ($first)
-			$where['FNAME1'] = $first;
-		if  ($middle)
-			$where['FNAME2'] = $middle;
-		if  ($last)
-			$where['LNAME'] = $last;
+		if  ($name)
+			$where['NAME'] = $name;
+		if  ($address)
+			$where['ADDRESS'] = $address;
+		if  ($tel_number)
+			$where['PHONE_NUMBER'] = $tel_number;
 
 		$teldata = $this->tele_model->get_telephone_data ($where, false);
 		echo json_encode($teldata);

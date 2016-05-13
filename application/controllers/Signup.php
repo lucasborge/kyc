@@ -91,7 +91,7 @@ class Signup extends CI_Controller {
 
 		$status = $this->profile_model->update_client($pdata, $nrn);
 
-		print_r($_REQUEST);
+		print_r($pdata);
 		exit;
 	}
 

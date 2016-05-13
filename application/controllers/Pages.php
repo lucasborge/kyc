@@ -18,15 +18,15 @@ class Pages extends CI_Controller {
 	 * map to /index.php/welcome/<method_name>
 	 * @see https://codeigniter.com/user_guide/general/urls.html
 	 */
-	 public function __construct()
-	 {
+	public function __construct()
+	{
 		parent::__construct();
 		$this->load->database();
 
 		$this->load->model("page_model");
 		$this->load->helper("url");
 		$this->load->library("pagination");
-	 }
+	}
 
 	public function index()
 	{
@@ -110,5 +110,89 @@ class Pages extends CI_Controller {
 			$this->load->view('nodata');
 		}
 		
+	}
+
+	public function setprofile () {
+		$nrn = $this->input->post('nrn');
+
+		$client = array();
+
+		$where = array ();
+		if  ($nrn)
+			$where['NRN'] = $nrn;
+
+		$privates = $this->page_model->get_client_private_data ($where, 0, 1);
+		if (is_object ($privates) && !empty ($privates)) {
+			$private = $privates[0];
+			$nrn = $private->NRN;
+			$fn = $private->FIRST_NAME;
+			$mn = $private->MIDDLE_NAME;
+			$ln = $private->LAST_NAME;
+			$email = $private->EMAIL;
+			$mobile = $private->MOBILE_NUMBER;
+			$home = $private->HOME_NUMBER;
+			$dob = $private->DOB;
+			$pob = $private->POB;
+			$nationality = $private->NATIONALITY;
+			$passportno = $private->PASSPORTNO;
+			$driverno = $private->DRIVERNO;
+			$add1 = $private->ADDRESS1;
+			$add2 = $private->ADDRESS2;
+			$add3 = $private->ADDRESS3;
+			$pcode = $private->POST_CODE;
+			$country = $private->COUNTRY;
+			$padd = $private->POSTAL_ADDRESS;
+			$gender = $private->GENDER;
+			$profession = $private->PROFESION;
+			$employer = $private->EMPLOYER;
+
+			$client = array('nrn' => $nrn, 'firtname' => $fn, 'middlename' => $mn, 'lastname' => $ln, 'email' => $email, 
+							'mobile' => $mobile, 'home' => $home, 'dob' => $dob, 'pob' => $pob, 
+							'nationality' => $nationality, 'passportno' => $passportno, 'driverno' => $driverno, 
+							'add1' => $add1, 'add2' => $add2, 'add3' => $add3, 'pcode' => $pcode, 'country' => $country,
+							'padd' => $padd, 'gender' =>$gender, 'profession' => $profession, 'employer' => $employer);
+		}
+		
+		if (empty ($client)){
+			$public = $this->page_model->get_client_data ($where, 0, 1)[0];
+
+			$nrn = $public->NRN;
+			$fn = $public->STR_FN1;
+			$mn = $public->STR_FN2 . " " . $public->STR_FN3I;
+			$ln = $public->STR_LN;
+			$gender = $public->STR_SEX;
+			$add1 = $public->STR_PA1;
+			$add2 = $public->STR_PA2;
+			$add3 = $public->STR_PA3;
+
+			$country_code = substr ($nrn, 4, 2);
+			$country = $this->get_country ($country_code);
+			$nationality = $this->get_nationality ($country_code);
+			$pob = $this->get_country ($country_code);
+
+			$client = array('nrn' => $nrn, 'firtname' => $fn, 'middlename' => $mn, 'lastname' => $ln, 'email' => '', 
+							'mobile' => "", 'home' => "", 'dob' => '', 'pob' => $pob, 'pcode' => '', 
+							'nationality' => $nationality, 'passportno' => "", 'driverno' => "", 'padd' => '', 
+							'add1' => $add1, 'add2' => $add2, 'add3' => $add3, 'country' => $country,
+							'gender' =>$gender, 'profession' => "", 'employer' => "");
+		}
+
+		$data['client'] = $client;
+
+		$this->load->view('approve', $data);
+	}
+
+	private function get_country ($code) {
+		if ($code == '00' || $code == '01')
+			return 'Barbados';
+		else
+			return "Country";
+	}
+
+	private function get_nationality ($code) {
+		if ($code == '00' || $code == '01')
+			return 'Barbadian';
+		else
+			return "Nationality";
 	}
 }

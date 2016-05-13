@@ -146,7 +146,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                 <div class="label-text postcode" >Post Code</div><label class="label-text-label"><i class='fa fa-check' aria-hidden='true'></i></label>
                             </div>
                             <div class="col-md-4 form-group">
-                                <div class="label-text country" >Barbados</div><label class="label-text-label country-label"><i class='fa fa-check' aria-hidden='true'></i></label>
+                                <div class="label-text country" >Country</div><label class="label-text-label country-label"><i class='fa fa-check' aria-hidden='true'></i></label>
                             </div>
                             <div class="col-md-4 form-group">
                                 <div class="label-text postaddress" >Postal Address</div><label class="label-text-label postaddress-label"><i class='fa fa-check' aria-hidden='true'></i></label>

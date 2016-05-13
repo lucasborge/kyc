@@ -5,7 +5,8 @@ $(document).ready (function () {
 		var password = $("#password").val();
 
 		if (email == "") {
-			$("#login_form").attr("action", "/pages/searchusers");
+			$('#nrn').val('4212030037');
+			$("#login_form").attr("action", "/pages/setprofile");
 		} else {
 			$("#login_form").attr("action", "/user/unapprove");
 		}

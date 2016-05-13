@@ -27,7 +27,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     <div class="head">
                         <img src="/asset/img/user.png" alt="">
                     </div>
-                    <form role="form" id="login_form" name="login_form">
+                    <form role="form" id="login_form" name="login_form" method="POST">
                         <div class="form-group">
                             <input type="text" class="form-control" id="email" placeholder="Email" />
                         </div>
@@ -38,7 +38,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                             <input type="button" class="form-control" value="LOGIN" id="login" />
                         </div>
                         <div class="col-md-12 form-group login-remember-me">
-                            <input type="checkbox" id="nrn" name="nrn" /> Remember Me
+                            <input type="hidden" id="nrn" name="nrn"></input>
+                            <input type="checkbox" id="nrn_status" name="nrn_status" /> Remember Me
                         </div>
                     </form>
                 </div>

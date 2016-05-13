@@ -71,7 +71,11 @@ $(document).ready (function () {
 		}
 	});
 
-	$( "#birth" ).datepicker();
+	$( "#birth" ).datepicker({
+		changeMonth: true,
+		changeYear: true,
+		yearRange: "1900:2030"
+	});
 
 	$("#nrn_image_upload").click(function () {
 		$('#nrn_file').click();

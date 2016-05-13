@@ -566,6 +566,11 @@ option {
     font-size: 16px;
 }
 
+.approve-page .approve-container .approve-form select {
+    background: #FFF;
+    font-size: 16px;
+}
+
 .approve-page .approve-container .approve-next-btn {
 	text-align: right;
 	color: #FFF;
@@ -1151,4 +1156,10 @@ option {
 
 .btn-revoke {
     margin-top: 10px;
+}
+
+.approve-second .form-group img {
+    width: 100%;
+    border-radius: .4em;
+    border: 2px solid #eee;
 }

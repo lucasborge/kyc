@@ -156,7 +156,7 @@ $(document).ready (function () {
 			var DOB = day + "-" + month + "-" + year;
 			var POB = get_pob (country_code);
 			var nationality = get_nationality (country_code);
-			var country = "";
+			var country = get_country (country_code);
 
 			var verified = 0;
 			var id_documents = 0;
@@ -379,21 +379,24 @@ $(document).ready (function () {
 	});
 
 	function get_nationality (code) {
-		if (code == '00')
+		if (code == '00' || code == '01')
 			return 'Barbadian';
-		else if (code == '01') 
-			return'Barbadian';
 		else
-			return'Barbadian';
+			return'';
 	}
 
 	function get_pob (code) {
-		if (code == '00')
-			return 'Barbados';
-		else if (code == '01')
+		if (code == '00' || code == '01')
 			return 'Barbados';
 		else
+			return '';
+	}
+
+	function get_countrys (code) {
+		if (code == '00' || code == '01')
 			return 'Barbados';
+		else
+			return '';
 	}
 
 });

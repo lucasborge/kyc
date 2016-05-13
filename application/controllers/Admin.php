@@ -97,7 +97,7 @@ class Admin extends CI_Controller {
 
 		$config = array();
 
-		$config['base_url'] = base_url() . "/admin/searchlist/{$nrn}_{$lname}_{$fname}" ;
+		$config['base_url'] = "/admin/searchlist/{$nrn}_{$lname}_{$fname}" ;
 		$total_rows = $this->page_model->get_client_count ($where);
 		$config['total_rows'] = $total_rows;
 		$config['per_page'] = 30;

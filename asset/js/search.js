@@ -4,6 +4,10 @@ $(document).ready (function () {
 	var total_verify = 21;
 	var total_documents = 7;
 
+	var tooltip_position = {my:'center bottom', at:'center top-10', collision:'none'};
+
+	$('[data-toggle="tooltip"]').tooltip();
+
 	$("#search_users").click (function () {
 
 		var nrn = $("#nrn").val();

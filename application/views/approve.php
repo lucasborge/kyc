@@ -7,14 +7,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	<meta charset="utf-8">
 	<title>CariKYC</title>
 
+    <link rel="stylesheet" href="/asset/css/jquery-ui.css" />
 	<link rel="stylesheet" href="/asset/css/bootstrap.min.css" />
 	<link rel="stylesheet" href="/asset/css/bootstrap-theme.min.css" />
-    <link rel="stylesheet" href="/asset/css/jquery-ui.css" />
 
     <script type="text/javascript" src="/asset/js/jquery-2.1.1.min.js"></script>
-	<script type="text/javascript" src="/asset/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="/asset/js/jquery-ui.js"></script>
     <script type="text/javascript" src="/asset/js/jquery.searchabledropdown.js"></script>
+    <script type="text/javascript" src="/asset/js/bootstrap.min.js"></script>
 
 	<link rel="stylesheet" href="/asset/css/style.css" />
     <script type="text/javascript" src="/asset/js/search.js"></script>
@@ -31,54 +31,54 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 <div class="col-md-12 approve-form approve-first">
                     <form role="form">
                         <div class="col-md-4 form-group">
-                            <input type="text" class="form-control" id="first_name" placeholder="First" value="<?=$client['firtname']?>" />
+                            <input type="text" class="form-control" id="first_name" placeholder="First" value="<?=$client['firtname']?>"  data-toggle="tooltip" title="First Name"/>
                         </div>
                         <div class="col-md-4 form-group">
-                            <input type="text" class="form-control" id="middle_name" placeholder="Middle" value="<?=$client['middlename']?>" data-toggle="tooltip" data-placement="top" title="Tooltip on top"/>
+                            <input type="text" class="form-control" id="middle_name" placeholder="Middle" value="<?=$client['middlename']?>" data-toggle="tooltip" title="Middle Name"/>
                         </div>
                         <div class="col-md-4 form-group">
-                            <input type="text" class="form-control" id="last_name" placeholder="Last" value="<?=$client['lastname']?>" />
+                            <input type="text" class="form-control" id="last_name" placeholder="Last" value="<?=$client['lastname']?>"  data-toggle="tooltip" title="Last Name"/>
                         </div>
                         <div class="col-md-4 form-group">
-                            <input type="text" class="form-control" id="email" placeholder="email" value="<?=$client['email']?>" />
+                            <input type="text" class="form-control" id="email" placeholder="email" value="<?=$client['email']?>"  data-toggle="tooltip" title="Email"/>
                         </div>
                         <div class="col-md-4 form-group">
-                            <input type="text" class="form-control" id="mobile" placeholder="mobile" value="<?=$client['mobile']?>" />
+                            <input type="text" class="form-control" id="mobile" placeholder="mobile" value="<?=$client['mobile']?>"  data-toggle="tooltip" title="Mobile Number"/>
                         </div>
                         <div class="col-md-4 form-group">
-                            <input type="text" class="form-control" id="home" placeholder="home" value="<?=$client['home']?>" />
-                        </div>
-                        <div class="col-md-12 space-10"></div>
-                        <div class="col-md-4 form-group">
-                            <input type="text" class="form-control" id="birth" name="birth" placeholder="Date of Birth" value="<?=$client['dob']?>" />
-                        </div>
-                        <div class="col-md-4 form-group">
-                            <input type="text" class="form-control" id="place" placeholder="Place of Birth" value="<?=$client['pob']?>" />
-                        </div>
-                        <div class="col-md-4 form-group">
-                            <input type="text" class="form-control" id="national" placeholder="Nationality" value="<?=$client['nationality']?>" />
-                        </div>
-                        <div class="col-md-4 form-group">
-                            <input type="text" class="form-control" id="nrn" placeholder="NRN"  value="<?=$client['nrn']?>" />
-                        </div>
-                        <div class="col-md-4 form-group">
-                            <input type="text" class="form-control" id="passno" placeholder="Passport No" value="<?=$client['passportno']?>" />
-                        </div>
-                        <div class="col-md-4 form-group">
-                            <input type="text" class="form-control" id="driverno" placeholder="Driver License No" value="<?=$client['driverno']?>" />
+                            <input type="text" class="form-control" id="home" placeholder="home" value="<?=$client['home']?>"  data-toggle="tooltip" title="Home Number"/>
                         </div>
                         <div class="col-md-12 space-10"></div>
                         <div class="col-md-4 form-group">
-                            <input type="text" class="form-control" id="per_addr1" placeholder="Permanent Address" value="<?=$client['add1']?>" />
+                            <input type="text" class="form-control" id="birth" name="birth" placeholder="Date of Birth" value="<?=$client['dob']?>" data-toggle="tooltip" title="Date of Birth"/>
                         </div>
                         <div class="col-md-4 form-group">
-                            <input type="text" class="form-control" id="per_addr2" placeholder="Permanent Address" value="<?=$client['add2']?>" />
+                            <input type="text" class="form-control" id="place" placeholder="Place of Birth" value="<?=$client['pob']?>" data-toggle="tooltip" title="Place of Birth"/>
                         </div>
                         <div class="col-md-4 form-group">
-                            <input type="text" class="form-control" id="per_addr3" placeholder="Permanent Address" value="<?=$client['add3']?>" />
+                            <input type="text" class="form-control" id="national" placeholder="Nationality" value="<?=$client['nationality']?>" data-toggle="tooltip" title="Nationality"/>
                         </div>
                         <div class="col-md-4 form-group">
-                            <input type="text" class="form-control" id="post_code" placeholder="Post code" value="<?=$client['pcode']?>" />
+                            <input type="text" class="form-control" id="nrn" placeholder="NRN"  value="<?=$client['nrn']?>" data-toggle="tooltip" title="NRN"/>
+                        </div>
+                        <div class="col-md-4 form-group">
+                            <input type="text" class="form-control" id="passno" placeholder="Passport No" value="<?=$client['passportno']?>" data-toggle="tooltip" title="Passport No"/>
+                        </div>
+                        <div class="col-md-4 form-group">
+                            <input type="text" class="form-control" id="driverno" placeholder="Driver License No" value="<?=$client['driverno']?>" data-toggle="tooltip" title="Driver No"/>
+                        </div>
+                        <div class="col-md-12 space-10"></div>
+                        <div class="col-md-4 form-group">
+                            <input type="text" class="form-control" id="per_addr1" placeholder="Permanent Address1" value="<?=$client['add1']?>" data-toggle="tooltip" title="Permanent Address1"/>
+                        </div>
+                        <div class="col-md-4 form-group">
+                            <input type="text" class="form-control" id="per_addr2" placeholder="Permanent Address2" value="<?=$client['add2']?>" data-toggle="tooltip" title="Permanent Address2"/>
+                        </div>
+                        <div class="col-md-4 form-group">
+                            <input type="text" class="form-control" id="per_addr3" placeholder="Permanent Address3" value="<?=$client['add3']?>" data-toggle="tooltip" title="Permanent Address3"/>
+                        </div>
+                        <div class="col-md-4 form-group">
+                            <input type="text" class="form-control" id="post_code" placeholder="Post Code" value="<?=$client['pcode']?>" data-toggle="tooltip" title="Post Code"/>
                         </div>
                         <div class="col-md-4 form-group">
                             <select class="form-control" id="country" name="country">
@@ -329,17 +329,17 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                             </select>
                         </div>
                         <div class="col-md-4 form-group">
-                            <input type="text" class="form-control" id="postal_addr" placeholder="Postal Address" value="<?=$client['padd']?>" />
+                            <input type="text" class="form-control" id="postal_addr" placeholder="Postal Address" value="<?=$client['padd']?>" data-toggle="tooltip" title="Postal Address"/>
                         </div>
                         <div class="col-md-12 space-10"></div>
                         <div class="col-md-4 form-group">
                             &nbsp;
                         </div>
                         <div class="col-md-4 form-group">
-                            <input type="text" class="form-control" id="profesion" placeholder="Profession" value="<?=$client['profession']?>" />
+                            <input type="text" class="form-control" id="profesion" placeholder="Profession" value="<?=$client['profession']?>" data-toggle="tooltip" title="Profession"/>
                         </div>
                         <div class="col-md-4 form-group">
-                            <input type="text" class="form-control" id="employer" placeholder="Employer" value="<?=$client['employer']?>" />
+                            <input type="text" class="form-control" id="employer" placeholder="Employer" value="<?=$client['employer']?>" data-toggle="tooltip" title="Employer"/>
                         </div>
                     </form>
                 </div>

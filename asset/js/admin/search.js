@@ -392,7 +392,7 @@ $(document).ready (function () {
 			return '';
 	}
 
-	function get_countrys (code) {
+	function get_country (code) {
 		if (code == '00' || code == '01')
 			return 'Barbados';
 		else

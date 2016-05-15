@@ -260,8 +260,8 @@ $(document).ready (function () {
 				$(".gender").css("color", "#bbb");
 				$(".gender-label").css("display", "none");
 			}
-			if (country) {
-				$(".country").text("Country");
+			if (country != "") {
+				$(".country").text(country);
 				$(".country").css("color", "#666");
 				$(".country-label").css("display", "block");
 				verified++;
